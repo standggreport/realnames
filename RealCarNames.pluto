@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.6.1"
+local SCRIPT_VERSION = "3.6.2"
 
 ---
 --- Auto-Updater Lib Install
@@ -439,9 +439,9 @@ local labels = {
     { "CHERNOBOG", "MAZ-543M" },
     { "HANDLER", "Taylor TEC950L" },
     { "DOCKTUG", "Ottawa Commando 4x2" },
-    { "BULLDOZER", "Caterpillar 963D" },
+    { "BULLDOZE", "Caterpillar 963D" },
     { "DUMP", "Caterpillar 789" },
-    { "FORKLIFT", "LXE40 Spark Lithium Forklift Truck" },
+    { "FORK", "LXE40 Spark Lithium Forklift Truck" },
     { "INSURGENT2", "Terradyne GURKHA LAPV" },
     { "INSURGENT", "Terradyne GURKHA RPV" },
     { "INSURGENT3", "Terradyne GURKHA RPV (Custom)" },
@@ -907,7 +907,7 @@ local labels = {
     { "DOCKTUG", "Yard Tug" },
 }
 
-menu.my_root():action("^-_-^ Activate <3", { "replacecarnames" }, "Replaces Car Names With Real Life Counterpart ^-_-^ v3.6.1", function()
+menu.my_root():action("^-_-^ Activate <3", { "replacecarnames" }, "Replaces Car Names With Real Life Counterpart ^-_-^ v3.6.2", function()
 	for _, data in ipairs(labels) do
 		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
 		util.yield()
@@ -930,8 +930,8 @@ menu.my_root():action("Activate", { "replacedefaultnames" }, "It doesn't work ri
 	end
 	util.toast("Done <3")
 end)
-]]
--- Manually check for updates with a menu option
+]]	
+
 menu.my_root():action("Check for Update <3", {}, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
     util.toast("Checking for updates")
