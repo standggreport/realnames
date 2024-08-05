@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.7"
+local SCRIPT_VERSION = "3.7.1"
 
 ---
 --- Auto-Updater Lib Install
@@ -999,7 +999,7 @@ end)
 menu.my_root():divider("Apply Real Weapon Names")
 
 menu.my_root():action("Activate RWN <3", { "rwn" }, "Replaces Weapon Names With Real Life Counterpart ^-_-^", function()
-	for _, data in ipairs(cars) do
+	for _, data in ipairs(weapons) do
 		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
 		util.yield()
 	end
@@ -1016,7 +1016,7 @@ menu.my_root():action("Activate DN <3", { "rndefault" }, "It doesn't work right 
 	util.toast("3< enoD")
 end)
 
-menu.my_root():divider("Version: v3.7")
+menu.my_root():divider("Version: v3.7.1")
 
 menu.my_root():action("Check for Update <3", { "rcnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
