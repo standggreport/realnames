@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.6.2"
+local SCRIPT_VERSION = "3.6.3"
 
 ---
 --- Auto-Updater Lib Install
@@ -41,28 +41,28 @@ local labels = {
 -- Albany / Cadillac, Lincoln
 	{ "ALBANY", "" },
 	{ "ALPHA", "Cadillac ATS '13" },
-    { "BRIGHAM", "Cadillac Miller-Meteor '59" },
+	{ "BRIGHAM", "Cadillac Miller-Meteor '59" },
 	{ "BTYPE2", "Munster Koach" },
-    { "BUCCANEE", "Chevrolet Monte Carlo '70" },
-    { "BUCCANEE2", "Chevrolet Monte Carlo Custom" },
-    { "CAVCADE", "Cadillac Escalade '02" },
-    { "CAVCADE2", "Cadillac Escalade '07" },
-    { "CAVALCADE3", "Cadillac Escalade-V '23" },
-    { "EMPEROR", "Cadillac Sedan DeVille '77" },
-    { "EMPEROR2", "Cadillac Sedan DeVille '77" },
-    { "HERMES", "Mercury Eight '49" },
-    { "LURCHER", "Funeral Coach" },
-    { "MANANA", "Cadillac Eldorado '69" },
-    { "MANANA2", "Cadillac Eldorado Custom" },
-    { "POLICEO2", "Cadillac Seville Police" },
-    { "PRIMO", "Cadillac Seville '92" },
-    { "PRIMO2", "Cadillac Seville Custom" },
+	{ "BUCCANEE", "Chevrolet Monte Carlo '70" },
+	{ "BUCCANEE2", "Chevrolet Monte Carlo Custom" },
+	{ "CAVCADE", "Cadillac Escalade '02" },
+	{ "CAVCADE2", "Cadillac Escalade '07" },
+	{ "CAVALCADE3", "Cadillac Escalade-V '23" },
+	{ "EMPEROR", "Cadillac Sedan DeVille '77" },
+	{ "EMPEROR2", "Cadillac Sedan DeVille '77" },
+	{ "HERMES", "Mercury Eight '49" },
+	{ "LURCHER", "Funeral Coach" },
+	{ "MANANA", "Cadillac Eldorado '69" },
+	{ "MANANA2", "Cadillac Eldorado Custom" },
+	{ "POLICEO2", "Cadillac Seville Police" },
+	{ "PRIMO", "Cadillac Seville '92" },
+	{ "PRIMO2", "Cadillac Seville Custom" },
 	{ "ROOSEVELT", "Cadillac 341A Town Sedan '28" },
-    { "ROOSEVELT2", "Cadillac 341A Town Sedan '28" },
-    { "STRETCH", "Lincoln Town Car Limo '98" },
-    { "VIRGO", "Cadillac Eldorado '70" },
-    { "VSTR", "Cadillac CTS-V '16" },
-    { "WASHINGT", "Lincoln Town Car '98" },
+	{ "ROOSEVELT2", "Cadillac 341A Town Sedan '28" },
+	{ "STRETCH", "Lincoln Town Car Limo '98" },
+	{ "VIRGO", "Cadillac Eldorado '70" },
+	{ "VSTR", "Cadillac CTS-V '16" },
+	{ "WASHINGT", "Lincoln Town Car '98" },
 
 -- 	Annis / Nissan, Mazda
 	{ "ANNIS", "" },
@@ -430,37 +430,37 @@ local labels = {
 	{ "RUSTON", "VUHL 05 '08" },
 
 -- HVY / CAT
-    { "AIRTUG", "Clark CT 30" },
-    { "APC", "BRDM-2" },
-    { "BARRACKS2", "Oshkosh MTVR semi" },
-    { "BARRACKS", "Oshkosh MTVR" },
-    { "BARRAGE", "HDT Storm SRTV" },
-    { "BIFF", "Kenworth T800" },
-    { "CHERNOBOG", "MAZ-543M" },
-    { "HANDLER", "Taylor TEC950L" },
-    { "DOCKTUG", "Ottawa Commando 4x2" },
-    { "BULLDOZE", "Caterpillar 963D" },
-    { "DUMP", "Caterpillar 789" },
-    { "FORK", "LXE40 Spark Lithium Forklift Truck" },
-    { "INSURGENT2", "Terradyne GURKHA LAPV" },
-    { "INSURGENT", "Terradyne GURKHA RPV" },
-    { "INSURGENT3", "Terradyne GURKHA RPV (Custom)" },
-    { "MENACER", "Boss Hunting Truck" },
-    { "NIGHTSHARK", "Dartz" },
-    { "RIPLEY", "Schopf F296C" },
-    { "SCARAB", "Howe & Howe Ripsaw EV2 (Apocalypse)" },
-    { "SCARAB2", "Howe & Howe Ripsaw EV2 (Future Shock)" },
-    { "SCARAB3", "Howe & Howe Ripsaw EV2 (Nightmare)" },
-    { "SKYLIFT", "S-64 Skycrane" },
-    { "VETIR", "Renault TRM-4000" },
+	{ "AIRTUG", "Clark CT 30" },
+	{ "APC", "BRDM-2" },
+	{ "BARRACKS2", "Oshkosh MTVR semi" },
+	{ "BARRACKS", "Oshkosh MTVR" },
+	{ "BARRAGE", "HDT Storm SRTV" },
+	{ "BIFF", "Kenworth T800" },
+	{ "CHERNOBOG", "MAZ-543M" },
+	{ "HANDLER", "Taylor TEC950L" },
+	{ "DOCKTUG", "Ottawa Commando 4x2" },
+	{ "BULLDOZE", "Caterpillar 963D" },
+	{ "DUMP", "Caterpillar 789" },
+	{ "FORK", "LXE40 Spark Lithium Forklift Truck" },
+	{ "INSURGENT2", "Terradyne GURKHA LAPV" },
+	{ "INSURGENT", "Terradyne GURKHA RPV" },
+	{ "INSURGENT3", "Terradyne GURKHA RPV (Custom)" },
+	{ "MENACER", "Boss Hunting Truck" },
+	{ "NIGHTSHARK", "Dartz" },
+	{ "RIPLEY", "Schopf F296C" },
+	{ "SCARAB", "Howe & Howe Ripsaw EV2 (Apocalypse)" },
+	{ "SCARAB2", "Howe & Howe Ripsaw EV2 (Future Shock)" },
+	{ "SCARAB3", "Howe & Howe Ripsaw EV2 (Nightmare)" },
+	{ "SKYLIFT", "S-64 Skycrane" },
+	{ "VETIR", "Renault TRM-4000" },
 	
 -- Invetero / Corvette
 	{ "INVERTO", "" },
-    { "COQUETTE", "Chevrolet Corvette C7 '14" },
-    { "COQUETTE2", "Chevrolet Corvette C2 '63" },
-    { "COQUETTE3", "Chevrolet Corvette C1 '61" },
-    { "COQUETTE4", "Chevrolet Corvette C8 '20" },
-    { "COQUETTE5", "Chevrolet Corvette C1 '56" },
+	{ "COQUETTE", "Chevrolet Corvette C7 '14" },
+	{ "COQUETTE2", "Chevrolet Corvette C2 '63" },
+	{ "COQUETTE3", "Chevrolet Corvette C1 '61" },
+	{ "COQUETTE4", "Chevrolet Corvette C8 '20" },
+	{ "COQUETTE5", "Chevrolet Corvette C1 '56" },
 
 -- Imponte / Pontiac
 	{ "IMPONTE", "" },
@@ -591,17 +591,17 @@ local labels = {
 -- Nagasaki / Kawasaki
 	{ "NAGASAKI", "" },
 	{ "BF400", "KTM 450 Rally" },
-    { "BLAZER", "Yamaha YFZ450R" },
+	{ "BLAZER", "Yamaha YFZ450R" },
 	{ "BLAZER2", "Honda Fourtrax 250" },
 	{ "BLAZER03", "Yamaha YFZ450R Hot Rod" },
-    { "BLAZER4", "Yamaha YFZ450R Sport" },
+	{ "BLAZER4", "Yamaha YFZ450R Sport" },
 	{ "BLAZER5", "Gibbs Quadski" },
-    { "BUZZARD", "AH-6 Little Bird" },
-    { "BUZZARD2", "MH-6 Little Bird" },
+	{ "BUZZARD", "AH-6 Little Bird" },
+	{ "BUZZARD2", "MH-6 Little Bird" },
 	{ "CADDY", "E-Z-Go TXT" },
-    { "CADDY", "Golf Cart" },
-    { "CADDY3", "Golf Cart" },
-    { "CARBON", "Ducati 1199" },
+	{ "CADDY", "Golf Cart" },
+	{ "CADDY3", "Golf Cart" },
+	{ "CARBON", "Ducati 1199" },
 	{ "CHIMERA", "Chimera" },
 	{ "DINGHY", "Zodiac Hurricane CZ7" },
 	{ "DINGHY3", "Zodiac Hurricane CZ7" },
@@ -691,20 +691,20 @@ local labels = {
 	{ "COUREUR", "Renault R5 Turbo 3E '22" },
 
 -- Pfister / Porsche
-    { "PFISTER", "" },
-    { "ASTRON", "Porsche Macan (95B)" },
+	{ "PFISTER", "" },
+	{ "ASTRON", "Porsche Macan (95B)" },
 	{ "GROWLER", "Porsche 718 Cayman" },
 	{ "NEON", "Porsche Taycan" },
 	{ "PFISTER811", "Porsche 918 Spyder" },
-    { "COMET2", "Porsche 997 GT2" },
-    { "COMET3", "Porsche 930 Turbo" },
-    { "COMET4", "Porsche 911 Safari" },
-    { "COMET5", "Porsche 997 GT2 RS" },
-    { "COMET6", "Porsche 911 (992)" },
+	{ "COMET2", "Porsche 997 GT2" },
+	{ "COMET3", "Porsche 930 Turbo" },
+	{ "COMET4", "Porsche 911 Safari" },
+	{ "COMET5", "Porsche 997 GT2 RS" },
+	{ "COMET6", "Porsche 911 (992)" },
 	{ "COMET7", "Porsche 911 (992) Cabriolet" },
 
 -- Principe / Ducati
-    { "PRINCIPL", "" },
+	{ "PRINCIPL", "" },
 	{ "DEVESTE", "Devel Sixteen '18" },
 	{ "DIABLOUS", "Ducati Streetfighter 848 '15" },
 	{ "DIABLOUS2", "Ducati Streetfighter 848 (Custom)" },
@@ -723,7 +723,7 @@ local labels = {
 	
 -- RUNE / VAZ, Lada
 	{ "RUNE", "" },
-    { "CHEBUREK", "VAZ 2106" },
+	{ "CHEBUREK", "VAZ 2106" },
 	{ "KOSATKA", "Delta III-class submarine" },
 	{ "ZHABA", "SHERP ATV" },
 
@@ -836,7 +836,9 @@ local labels = {
 	{ "SPEEDO4", "Chevrolet Express '03 Custom" },
 	{ "SURGE", "Holden Volt '10" },
 	{ "TAIPAN", "Hennessey Venom F5" },
-
+	{ "TROPHY", "Ford F-150 Baja" },
+	{ "TROPHY2", "Red Bull SMG Buggy" },
+	
 -- Vulcar / Volvo, Datsun
 	{ "VULCAR", "" },
 	{ "FAGALOA", "Volvo Amazon Station Wagon" },
@@ -892,30 +894,20 @@ local labels = {
 	{ "STRATUM", "Honda Accord Wagon '94" },
 	{ "JOURNEY", "Triple E '77" },
 	{ "JOURNEY2", "Triple E '77" },
-
-
-    { "AVARUS", "Harley-Davidson Dyna" },
-    { "BAGGER", "Harley-Davidson Road King" },
-    { "BARRAGE", "Polaris MRZR" },
-    { "BOMBUSHKA", "Antonov An-124" },
-    { "BRAWLER", "Local Motors Rally Fighter" },
-    { "BTYPE", "Bentley Blower" },
-    { "CABLECAR", "San Francisco Cable Car" },
-    { "CHERNOBOG", "MZKT-79221" },
-    { "CUBAN800", "Cessna 310" },
-    { "DLOADER", "Ford Model A Pickup" },
-    { "DOCKTUG", "Yard Tug" },
+	
+	{ "AVARUS", "Harley-Davidson Dyna" },
+	{ "BAGGER", "Harley-Davidson Road King" },
+	{ "BARRAGE", "Polaris MRZR" },
+	{ "BOMBUSHKA", "Antonov An-124" },
+	{ "BRAWLER", "Local Motors Rally Fighter" },
+	{ "BTYPE", "Bentley Blower" },
+	{ "CABLECAR", "San Francisco Cable Car" },
+	{ "CHERNOBOG", "MZKT-79221" },
+	{ "CUBAN800", "Cessna 310" },
+	{ "DLOADER", "Ford Model A Pickup" },
+	{ "DOCKTUG", "Yard Tug" },
 }
 
-menu.my_root():action("^-_-^ Activate <3", { "replacecarnames" }, "Replaces Car Names With Real Life Counterpart ^-_-^ v3.6.2", function()
-	for _, data in ipairs(labels) do
-		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
-		util.yield()
-	end
-	util.toast("Done <3")
-end)
-
---[[
 local deflabels = {
 
 -- Albany / Cadillac, Lincoln
@@ -923,16 +915,29 @@ local deflabels = {
 
 }
 
-menu.my_root():action("Activate", { "replacedefaultnames" }, "It doesn't work right now!", function()
-	for _, data in ipairs(deflabels) do
+menu.my_root():divider("Apply Real Car Names v3.6.3")
+
+menu.my_root():action("^-_-^ Activate <3", { "rcn" }, "Replaces Car Names With Real Life Counterpart ^-_-^", function()
+	for _, data in ipairs(labels) do
 		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
 		util.yield()
 	end
 	util.toast("Done <3")
 end)
-]]	
+--[[
+menu.my_root():divider("Apply Default Names")
 
-menu.my_root():action("Check for Update <3", {}, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
+menu.my_root():action("3< etavitcA ^-_-^", { "rcndefault" }, "It doesn't work right now!", function()
+	for _, data in ipairs(deflabels) do
+		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
+		util.yield()
+	end
+	util.toast("3< enoD")
+end)
+]]
+menu.my_root():divider("")
+
+menu.my_root():action("Check for Update <3", { "rcnupdate" }, "The script will automatically check for updates at most daily, but you can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
     util.toast("Checking for updates")
     auto_updater.run_auto_update(auto_update_config)
