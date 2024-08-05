@@ -2,7 +2,7 @@ local SCRIPT_VERSION = "3.6"
 SCRIPT_VERSION = "3.6"
 
 local auto_update_config = {
-    source_url = "https://raw.githubusercontent.com/standggreport/realcarnames2/main/RealCarNames.pluto",
+    source_url = "https://raw.githubusercontent.com/standggreport/realcarnames/main/RealCarNames.pluto",
     script_relpath=SCRIPT_RELPATH,
     check_interval=10,
 }
