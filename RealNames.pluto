@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.7.6"
+local SCRIPT_VERSION = "3.7.7"
 
 ---
 --- Auto-Updater Lib Install
@@ -48,8 +48,7 @@ local cars = {
 	{ "CAVCADE", "Cadillac Escalade '02" },
 	{ "CAVCADE2", "Cadillac Escalade '07" },
 	{ "CAVALCADE3", "Cadillac Escalade-V '23" },
-	{ "EMPEROR", "Cadillac Sedan DeVille '77" },
-	{ "EMPEROR2", "Cadillac Sedan DeVille '77" },
+	-- { "EMPEROR", "Cadillac Sedan DeVille '77" },
 	{ "HERMES", "Mercury Eight '49" },
 	{ "LURCHER", "Funeral Coach" },
 	{ "MANANA", "Cadillac Eldorado '69" },
@@ -85,7 +84,7 @@ local cars = {
 	{ "ZR3803", "Nissan 350Z (Z33) (Nightmare)" },
 
 	-- Benefactor / Mercedes-Benz
-	{ "BENEFACTOR", "" },
+	{ "BENEFAC", "" },
 	{ "BIFF", "Mercedes-Benz Dump Truck" },
 	{ "BRUISER", "Mercedes-Benz W114/W115 (Apocalypse)" },
 	{ "BRUISER2", "Mercedes-Benz W114/W115 (Future Shock)" },
@@ -102,11 +101,11 @@ local cars = {
 	{ "LM87", "Mercedes-Benz Sauber C9" },
 	{ "OPENWHEEL1", "Red Bull RB7" },
 	{ "PANTO", "Smart Fortwo" },
-	{ "SCHAFTER2", "Mercedes-Benz S63 AMG W221" },
+	{ "SCHAFTER", "Mercedes-Benz S63 AMG W221" },
 	{ "SCHAFTER3", "Mercedes-Benz S65 AMG W221" },
 	{ "SCHAFTER4", "Mercedes-Benz S65 AMG W221 LWB" },
-	{ "SCHAFTER4", "Mercedes-Benz S65 AMG W221 LWB (Armored)" },
 	{ "SCHAFTER5", "Mercedes-Benz S65 AMG W221 (Armored)" },
+	{ "SCHAFTER6", "Mercedes-Benz S65 AMG W221 LWB (Armored)" },
 	{ "SCHLAGEN", "Mercedes-Benz AMG GT" },
 	{ "SCHWARZE", "Mercedes-Benz C63 AMG Coupe" },
 	{ "SERRANO", "Mercedes-Benz M-Class W164" },
@@ -129,7 +128,8 @@ local cars = {
 	{ "DUNE3", "Desert Patrol Vehicle (DPV)" },
 	{ "RAPTOR", "Campagna T-Rex" },
 	{ "SURFER", "Volkswagen Type 2" },
-	{ "SURFER2", "Volkswagen Type 2 (Custom)" },
+	{ "SURFER2", "Volkswagen Type 2" },
+	{ "SURFER3", "Volkswagen Type 2 (Custom)" },
 	{ "WEEVIL", "Volkswagen Type 1 \"Beetle\"" },
 	{ "WEEVIL2", "Volkswagen Beetle Rat Rod" },
 
@@ -164,13 +164,15 @@ local cars = {
 	{ "POLDORADO", "Dodge Durango (Police)" },
 	{ "POLGAUNTLET", "Dodge Challenger SRT Demon Pursuit" },
 	{ "POLGREENW", "Dodge Monaco '77 (Police)" },
+	{ "RLOADER", "Dodge W-Series '41" },
 	{ "RLOADER2", "Dodge W-Series '41" },
 	{ "RUMPO", "Chevrolet Express Van '96" },
 	{ "RUMPO3", "Sportsmobile Classic 4×4" },
 	{ "VERLIER", "TVR Sagaris" },
 	{ "YOUGA", "Dodge Ram Van '94" },
-	{ "YOUGA2", "Ford E-Series '68" },
+	{ "YOUGA2", "Ford Econoline '68" },
 	{ "YOUGA3", "Ford Econoline E-300 Quadravan '74" },
+	{ "YOUGA4", "Ford Econoline (Custom)" },
 	{ "POLICE2", "Dodge Charger Pursuit '06" },
 
 	-- BRUTE / GMC, Chevrolet
@@ -210,7 +212,7 @@ local cars = {
 	{ "SWIFT2", "AgustaWestland AW109S Grand Deluxe" },
 	{ "TUG", "Cape Romain Tug" },
 	{ "VALKYRIE", "Bell UH-1Y Venom" },
-	{ "VALKYRIE", "Bell UH-1Y Venom MOD.0" },
+	{ "VALKYRI2", "Bell UH-1Y Venom MOD.0" },
 	{ "VESTRA", "Cirrus Vision SF50" },
 	{ "VOLATUS", "Airbus Helicopters H155" },
 
@@ -234,6 +236,7 @@ local cars = {
 	{ "PICADOR", "Chevrolet El Camino '68" },
 	{ "SURGE", "Holden Volt '10" },
 	{ "TAIPAN", "Hennessey Venom F5" },
+	{ "MARSHALL", "Chevrolet El Camino \"Monster Truck\"" },
 
 	-- Classique / Oldsmobile
 	{ "CLASSIQUE", "" },
@@ -244,6 +247,7 @@ local cars = {
 	{ "BRAWLER", "Local Motors Rally Fighter" },
 	{ "CYCLONE", "Rimac Concept One" },
 	{ "INDUCTOR", "Delfast Top 3.0i" },
+	{ "INDUCTOR2", "Delfast Top 3.0i (Junk Energy)" },
 	{ "RAIDEN", "Tesla Model S" },
 	{ "VOLTIC", "Tesla Roadster '08" },
 	{ "VOLTIC2", "Tesla Roadster '08 Rocket" },
@@ -466,7 +470,8 @@ local cars = {
 	-- Imponte / Pontiac
 	{ "IMPONTE", "" },
 	{ "DUKES", "Dodge Charger '68" },
-	{ "DUKES2", "Dodge Charger '68 (Armored)" },
+	{ "DUKES2", "Dodge Charger (Armored)" },
+	{ "DUKES3", "Dodge Charger (Beater)" },
 	{ "DELUXO", "DeLorean DMC-12 '81" },
 	{ "NITESHAD", "Pontiac GTO '68" },
 	{ "PHOENIX", "Pontiac Firebird '70" },
@@ -491,8 +496,8 @@ local cars = {
 
 	-- Karin / Toyota
 	{ "KARIN", "" },
-	{ "ASTROPE", "Toyota Camry (XV40) '06" },
 	{ "ASTEROPE2", "Toyota Camry (XV30) '01" },
+	{ "ASTROPE", "Toyota Camry (XV40) '06" },
 	{ "BJXL", "Toyota FJ Cruiser (XJ10) '06" },
 	{ "BOOR", "Subaru BRAT '81" },
 	{ "CALICO", "Toyota Celica GT-Four ST205 '94" },
@@ -504,8 +509,10 @@ local cars = {
 	{ "INTRUDER", "Infiniti Q45 (F50) '01" },
 	{ "KURUMA", "Mitsubishi Lancer Evolution X '07" },
 	{ "KURUMA2", "Mitsubishi Lancer Evolution X (Armored)" },
+	{ "MARQUIS", "Adjutor Yacht" },
 	{ "PREVION", "Toyota Soarer (Z30) '91" },
-	{ "REBEL", "Toyota Hilux '83" },
+	{ "REBEL01", "Toyota Hilux '83 (Rusty)" },
+	{ "REBEL02", "Toyota Hilux '83" },
 	{ "S95", "Toyota Scion FR-S (ZN6/ZC6) '12" },
 	{ "SULTAN", "Toyota Altezza (XE10) '98" },
 	{ "SULTAN2", "Mitsubishi Lancer Evo I" },
@@ -627,7 +634,7 @@ local cars = {
 	{ "OMNIS", "Audi Sport Quattro S1" },
 	{ "OMNISEGT", "Audi e-tron GT" },
 	{ "ROCOTO", "Audi Q5 (8R)" },
-	{ "TAILGATER", "Audi A6 (C6)" },
+	{ "TAILGATE", "Audi A6 (C6)" },
 	{ "TAILGATER2", "Audi RS3 Saloon (8V)" },
 
 	-- Ocelot / Jaguar
@@ -741,8 +748,12 @@ local cars = {
 	{ "DEFILER", "Suzuki Bandit 1200" },
 	{ "HAKUCHOU", "Suzuki GSX-R 1300 Hayabusa" },
 	{ "HAKUCHOU2", "Suzuki GSX-R 1300 Hayabusa (Drag)" },
-	{ "LONGFIN", "Magnum 44' luxury speed boat" },
+	{ "JETMAX", "Fountain 32 Fever" },
+	{ "LONGFIN", "Magnum Marine 44' Banzai" },
 	{ "PCJ", "Honda CB600F" },
+	{ "SQUALO", "Fibrafort 265" },
+	{ "SUNTRAP", "Bryant 219" },
+	{ "TROPIC", "Sea Ray 300 Sundancer" },
 	{ "VADER", "Kawasaki Z1000" },
 
 	-- Truffade / Bugatti
@@ -789,8 +800,7 @@ local cars = {
 	{ "CLIQUE2", "Ford Country Squire '51" },
 	{ "CONTENDER", "Toyota Tundra Crew Cab (XK50)" },
 	{ "DOMINATO", "Ford Mustang Shelby GT500 '05" },
-	{ "DOMINATOR10", "Ford Mustang '79" },
-	{ "DOMINATOR2", "Ford Mustang GT" },
+	{ "DOMINATO2", "Ford Mustang GT" },
 	{ "DOMINATOR3", "Ford Mustang '69 (S550)" },
 	{ "DOMINATOR4", "Ford Mustang Shelby GT500 '05" },
 	{ "DOMINATOR5", "Ford Mustang Shelby GT500 '05" },
@@ -798,6 +808,7 @@ local cars = {
 	{ "DOMINATOR7", "Ford Mustang SVT Cobra R" },
 	{ "DOMINATOR8", "Ford Mustang Boss 302 '69" },
 	{ "DOMINATOR9", "Ford Mustang Convertible '18" },
+	{ "DOMINATOR10", "Ford Mustang '79" },
 	{ "ELLIE", "Shelby Mustang GT500 '67" },
 	{ "FLASHGT", "Ford Focus RS RX (WRX)" },
 	{ "FMJ", "Ford GT '17" },
@@ -810,7 +821,7 @@ local cars = {
 	{ "IMPERATOR2", "Ford Falcon XB GT '73 (Future Shock)" },
 	{ "IMPERATOR3", "Ford Falcon XB GT '73 (Nightmare)" },
 	{ "MINIVAN", "Ford Windstar '99" },
-	{ "MINIVAN2", "Ford Windstar '(Custom)" },
+	{ "MINIVAN2", "Ford Windstar (Custom)" },
 	{ "MONSTER", "Ford F-250 Monster Truck" },
 	{ "PEYOTE", "Ford Thunderbird '55" },
 	{ "PEYOTE2", "Ford Thunderbird \"Bird of Prey\" Gasser '55" },
@@ -826,7 +837,8 @@ local cars = {
 	{ "RETINUE2", "Ford Escort MK 2" },
 	{ "RIATA", "Ford Bronco Concept '17" },
 	{ "SADLER", "Ford F-250 Super Duty '99" },
-	{ "SANDKING", "Ford F-350 Super Duty '11" },
+	{ "SANDKING", "Ford Super Duty '11" },
+	{ "SANDKIN2", "Ford F-350 Super Duty '11" },
 	{ "SLAMTRUCK", "Suzy Stuchel's Ford COE 600 Hauler '56" },
 	{ "SLAMVAN", "Ford F-Series '53" },
 	{ "SLAMVAN2", "Ford F-Series Panel Van '53" },
@@ -835,12 +847,13 @@ local cars = {
 	{ "SLAMVAN5", "Ford F6 '50 \"Stubby Bob\" (Future Shock)" },
 	{ "SLAMVAN6", "Ford F6 '50 \"Stubby Bob\" (Nightmare)" },
 	{ "SPEEDO", "Chevrolet Express '03" },
-	{ "SPEEDO2", "Chevrolet Express '03 (Clown)" },
+	{ "SPEEDO2", "Chevrolet Express (Clown)" },
 	{ "SPEEDO4", "Chevrolet Express (Custom)" },
 	{ "SURGE", "Holden Volt '10" },
 	{ "TAIPAN", "Hennessey Venom F5" },
 	{ "TROPHY", "Ford F-150 Baja" },
 	{ "TROPHY2", "Red Bull SMG Buggy" },
+	{ "WINKY", "Ford GPW" },
 
 	-- Vulcar / Volvo, Datsun
 	{ "VULCAR", "" },
@@ -889,9 +902,9 @@ local cars = {
 	{ "CARGOBOB", "Sikorsky MH-53 Pave Low" },
 	{ "CUBAN800", "Piper PA-30 Twin Comanche" },
 	{ "DUSTER", "Stearman PT-17" },
-	{ "STUNT", "Zivko Edge 540" },
 	{ "ROGUE", "Beechcraft T-6 Texan II" },
 	{ "SEABREEZE", "Seawind 300с" },
+	{ "STUNT", "Zivko Edge 540" },
 
 	-- Willard / Plymouth
 	{ "WILLARD", "" },
@@ -914,14 +927,20 @@ local cars = {
 	{ "BRAWLER", "Local Motors Rally Fighter" },
 	{ "BTYPE", "Bentley Blower" },
 	{ "CABLECAR", "San Francisco Cable Car" },
+	{ "CARGOPL", "Antonov An-124 Ruslan" },
 	{ "DLOADER", "Ford Model A Pickup" },
 	{ "DOCKTUG", "Yard Tug" },
 	{ "HUNTER", "Boeing AH-64 Apache" },
+	{ "JET", "Boeing 747-400" },
 	{ "KHANJALI", "Polish PL-01" },
 	{ "MOLOTOK", "Mikoyan-Gurevich MiG-15" },
 	{ "NOKOTA", "North American P-51 Mustang" },
+	{ "PATROLBOAT", "Preserved PBR 829" },
+	{ "PREDATOR", "Type PP-601" },
 	{ "RHINO", "Leopard 2A4" },
 	{ "SAVAGE", "Mil Mi-24 \"Hind\"" },
+	{ "SCORCHER", "Saracen Zen" },
+	{ "SEASHARK", "Sea-Doo RXT-X 260" },
 	{ "SPARROW", "Bell H-13 Sioux" },
 	{ "SPARROW2", "Bell H-13 Sioux" },
 	{ "SPARROW3", "Bell H-13 Sioux" },
@@ -931,8 +950,6 @@ local cars = {
 	{ "TRSMALL2", "M51 Trailer Mount" },
 	{ "VOLATOL", "Avro Vulcan" },
 	{ "VOMFEUER", "" }
-	{ "CARGOPLANE", "Antonov An-124 Ruslan" }
-	{ "JET", "Boeing 747-400" }
 
 }
 
@@ -1017,7 +1034,7 @@ menu.action(realnames, "Activate RWN <3", { "rwn" }, "Replaces Weapon Names With
 	util.toast("Done <3")
 end)
 
-menu.my_root():divider("Version: v3.7.6")
+menu.my_root():divider("Version: v3.7.7")
 
 menu.my_root():action("Check for Update <3", { "rcnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
