@@ -28,7 +28,7 @@ end
 if auto_updater == true then error("Invalid auto-updater lib. Please delete your Stand/Lua Scripts/lib/auto-updater.lua and try again") end
 
 local auto_update_config = {
-    source_url="https://raw.githubusercontent.com/standggreport/realcarnames/main/RealNames.pluto",
+    source_url="https://raw.githubusercontent.com/standggreport/realnames/main/RealNames.pluto",
     script_relpath=SCRIPT_RELPATH,
     switch_to_branch=selected_branch,
     verify_file_begins_with="local",
