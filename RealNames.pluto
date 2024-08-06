@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.7.4"
+local SCRIPT_VERSION = "3.7.5"
 
 ---
 --- Auto-Updater Lib Install
@@ -38,33 +38,33 @@ update_success = auto_updater.run_auto_update(auto_update_config)
 
 local cars = {
 
--- Albany / Cadillac, Lincoln
-  { "ALBANY", "" },
-  { "ALPHA", "Cadillac ATS '13" },
-  { "BRIGHAM", "Cadillac Miller-Meteor '59" },
-  { "BTYPE2", "Munster Koach" },
-  { "BUCCANEE", "Chevrolet Monte Carlo '70" },
-  { "BUCCANEE2", "Chevrolet Monte Carlo (Custom)" },
-  { "CAVCADE", "Cadillac Escalade '02" },
-  { "CAVCADE2", "Cadillac Escalade '07" },
-  { "CAVALCADE3", "Cadillac Escalade-V '23" },
-  { "EMPEROR", "Cadillac Sedan DeVille '77" },
-  { "EMPEROR2", "Cadillac Sedan DeVille '77" },
-  { "HERMES", "Mercury Eight '49" },
-  { "LURCHER", "Funeral Coach" },
-  { "MANANA", "Cadillac Eldorado '69" },
-  { "MANANA2", "Cadillac Eldorado (Custom)" },
-  { "POLICEO2", "Cadillac Seville Police" },
-  { "PRIMO", "Cadillac Seville '92" },
-  { "PRIMO2", "Cadillac Seville (Custom)" },
-  { "ROOSEVELT", "Cadillac 341A Town Sedan '28" },
-  { "ROOSEVELT2", "Cadillac 341A Town Sedan '28" },
-  { "STRETCH", "Lincoln Town Car Limo '98" },
-  { "VIRGO", "Cadillac Eldorado '70" },
-  { "VSTR", "Cadillac CTS-V '16" },
-  { "WASHINGT", "Lincoln Town Car '98" },
+	-- Albany / Cadillac, Lincoln
+	{ "ALBANY", "" },
+	{ "ALPHA", "Cadillac ATS '13" },
+	{ "BRIGHAM", "Cadillac Miller-Meteor '59" },
+	{ "BTYPE2", "Munster Koach" },
+	{ "BUCCANEE", "Chevrolet Monte Carlo '70" },
+	{ "BUCCANEE2", "Chevrolet Monte Carlo (Custom)" },
+	{ "CAVCADE", "Cadillac Escalade '02" },
+	{ "CAVCADE2", "Cadillac Escalade '07" },
+	{ "CAVALCADE3", "Cadillac Escalade-V '23" },
+	{ "EMPEROR", "Cadillac Sedan DeVille '77" },
+	{ "EMPEROR2", "Cadillac Sedan DeVille '77" },
+	{ "HERMES", "Mercury Eight '49" },
+	{ "LURCHER", "Funeral Coach" },
+	{ "MANANA", "Cadillac Eldorado '69" },
+	{ "MANANA2", "Cadillac Eldorado (Custom)" },
+	{ "POLICEO2", "Cadillac Seville Police" },
+	{ "PRIMO", "Cadillac Seville '92" },
+	{ "PRIMO2", "Cadillac Seville (Custom)" },
+	{ "ROOSEVELT", "Cadillac 341A Town Sedan '28" },
+	{ "ROOSEVELT2", "Cadillac 341A Town Sedan '28" },
+	{ "STRETCH", "Lincoln Town Car Limo '98" },
+	{ "VIRGO", "Cadillac Eldorado '70" },
+	{ "VSTR", "Cadillac CTS-V '16" },
+	{ "WASHINGT", "Lincoln Town Car '98" },
 
--- 	Annis / Nissan, Mazda
+	-- 	Annis / Nissan, Mazda
 	{ "ANNIS", "" },
 	{ "DRIFTEUROS", "Nissan 350Z (Drift)" },
 	{ "DRIFTREMUS", "Nissan Silvia S13 (Drift)" },
@@ -84,14 +84,14 @@ local cars = {
 	{ "ZR3802", "Nissan 350Z (Z33) (Future Shock)" },
 	{ "ZR3803", "Nissan 350Z (Z33) (Nightmare)" },
 
--- Benefactor / Mercedes-Benz
+	-- Benefactor / Mercedes-Benz
 	{ "BENEFACTOR", "" },
 	{ "BIFF", "Mercedes-Benz Dump Truck" },
 	{ "BRUISER", "Mercedes-Benz W114/W115 (Apocalypse)" },
 	{ "BRUISER2", "Mercedes-Benz W114/W115 (Future Shock)" },
 	{ "BRUISER3", "Mercedes-Benz W114/W115 (Nightmare)" },
 	{ "DUBSTA", "Mercedes-Benz G-Class (W463)" },
---	{ "DUBSTA2", "Mercedes-Benz Brabus G63 AMG" },
+	--	{ "DUBSTA2", "Mercedes-Benz Brabus G63 AMG" },
 	{ "DUBSTA3", "Mercedes-Benz G63 AMG 6x6" },
 	{ "FELTZER", "Mercedes-Benz SL65 AMG Black Series" },
 	{ "FELTZER3", "Mercedes-Benz 300 SL" },
@@ -118,8 +118,8 @@ local cars = {
 	{ "DRIFTVORSCH", "Mercedes-Benz W124 (Drift)" },
 	{ "XLS", "Mercedes-Benz GLS (X166)" },
 	{ "XLS2", "Mercedes-Benz GLS (X166)(Armored)" },
-	
--- BF / Volkswagen
+
+	-- BF / Volkswagen
 	{ "BF", "" },
 	{ "BF400", "KTM 450 Rally" },
 	{ "BFINJECT", "Baja Bug" },
@@ -133,12 +133,12 @@ local cars = {
 	{ "WEEVIL", "Volkswagen Type 1 \"Beetle\"" },
 	{ "WEEVIL2", "Volkswagen Beetle Rat Rod" },
 
--- Bollokan / Hyundai
+	-- Bollokan / Hyundai
 	{ "BOLLOKAN", "" },
 	{ "ENVISAGE", "Hyundai N Vision 74" },
 	{ "PRAIRIE", "Hyundai Tiburon '02" },
 
--- Bravado / Dodge, Chevrolet
+	-- Bravado / Dodge, Chevrolet
 	{ "BRAVADO", "" },
 	{ "BANSHEE", "Dodge Viper SR II '96" },
 	{ "BANSHEE2", "Dodge Viper SR II '96 Widebody" },
@@ -173,7 +173,7 @@ local cars = {
 	{ "YOUGA3", "Ford Econoline E-300 Quadravan '74" },
 	{ "POLICE2", "Dodge Charger Pursuit '06" },
 
--- BRUTE / GMC, Chevrolet
+	-- BRUTE / GMC, Chevrolet
 	{ "BRUTE", "" },
 	{ "BUS", "New Flyer D901" },
 	{ "AMBULAN", "GMC 3500 Cab (Ambulance)" },
@@ -189,7 +189,7 @@ local cars = {
 	{ "TIPTRUCK", "Ford L8000 Dump Truck" },
 	{ "TIPTRUCK2", "Ford L8000 Dump Truck" },
 
--- Buckingham / Learjet
+	-- Buckingham / Learjet
 	{ "BUCKING", "" },
 	{ "AKULA", "Boeing-Sikorsky RAH-66 Comanche" },
 	{ "ALPHAZ1", "Reberry 3M1C1R" },
@@ -214,7 +214,7 @@ local cars = {
 	{ "VESTRA", "Cirrus Vision SF50" },
 	{ "VOLATUS", "Airbus Helicopters H155" },
 
--- Canis / Jeep
+	-- Canis / Jeep
 	{ "CANIS", "" },
 	{ "BODHI2", "Kaiser Jeep M715" },
 	{ "CASTIGATOR", "Jeep Avenger '23" },
@@ -228,18 +228,18 @@ local cars = {
 	{ "SEMINOLE2", "Jeep Cherokee XJ" },
 	{ "TERMINUS", "Jeep Wrangler Rubicon (JL)" },
 
--- Cheval / Holden
+	-- Cheval / Holden
 	{ "CHEVAL", "" },
 	{ "FUGITIVE", "Holden Commodore (VE) '06" },
 	{ "PICADOR", "Chevrolet El Camino '68" },
 	{ "SURGE", "Holden Volt '10" },
 	{ "TAIPAN", "Hennessey Venom F5" },
 
--- Classique / Oldsmobile
+	-- Classique / Oldsmobile
 	{ "CLASSIQUE", "" },
 	{ "BROADWAY", "Oldsmobile 66 Club Sedan '46" },
 
--- Coil / Tesla
+	-- Coil / Tesla
 	{ "COIL", "" },
 	{ "BRAWLER", "Local Motors Rally Fighter" },
 	{ "CYCLONE", "Rimac Concept One" },
@@ -248,7 +248,7 @@ local cars = {
 	{ "VOLTIC", "Tesla Roadster '08" },
 	{ "VOLTIC2", "Tesla Roadster '08 Rocket" },
 
--- Declasse / Chevrolet
+	-- Declasse / Chevrolet
 	{ "DECLASSE", "" },
 	{ "ASEA", "Chevrolet Aveo T300 '11" },
 	{ "BRUTUS", "Chevrolet K-2500 Silverado '88 (Apocalypse)" },
@@ -312,7 +312,7 @@ local cars = {
 	{ "VIGERO2", "Chevrolet Camaro ZL1 '17" },
 	{ "VIGERO3", "Chevrolet Camaro ZL1 Convertible '17" },
 
--- Dewbauchee / Aston Martin
+	-- Dewbauchee / Aston Martin
 	{ "DEWBAUCH", "" },
 	{ "CHAMPION", "Aston Martin Victor '20" },
 	{ "EXEMPLAR", "Aston Martin Rapide '10" },
@@ -329,31 +329,31 @@ local cars = {
 	{ "SPECTER2", "Aston Martin DB10 '14 (Custom)" },
 	{ "VAGNER", "Aston Martin Valkyrie '18" },
 
--- Dinka / Honda, Toyota
-  { "DINKA", "" },
-  { "AKUMA", "Buell XB12S" },
-  { "BLISTA", "Honda Civic Type R FN2" },
-  { "BLISTA2", "Honda CR-X '88" },
-  { "BLISTA3", "Honda CR-X '88 (Monkey)" },
-  { "KANJO", "Honda Civic Type R EK9" },
-  { "KANJOSJ", "Honda Civic EJ '92" },
-  { "DOUBLE", "Honda CBR1000RR '08" },
-  { "ENDURO", "Honda CB250" },
-  { "JESTER", "Honda NSX (NC1) '17" },
-  { "JESTER2", "Honda NSX (NC1) '17 (Race)" },
-  { "JESTER3", "Toyota Supra (A80) '94" },
-  { "JESTER4", "Toyota GR Supra (A90) '20" },
-  { "DRIFTJESTER", "Toyota GR Supra (A90) (Drift)" },
-  { "POSTLUDE", "Honda Prelude (SN) '78" },
-  { "RT3000", "Honda S2000 '99" },
-  { "SUGOI", "Honda Civic Type R FK8 '17" },
-  { "THRUST", "Honda DN-01" },
-  { "VERUS", "Arctic Cat Alterra 570" },
-  { "VETO", "Rupp Dart A-Bone Kart '65" },
-  { "VETO2", "Rupp Dart A-Bone Kart (Modern)" },
-  { "VINDICATOR", "Honda NM4" },
+	-- Dinka / Honda, Toyota
+	{ "DINKA", "" },
+	{ "AKUMA", "Buell XB12S" },
+	{ "BLISTA", "Honda Civic Type R FN2" },
+	{ "BLISTA2", "Honda CR-X '88" },
+	{ "BLISTA3", "Honda CR-X '88 (Monkey)" },
+	{ "KANJO", "Honda Civic Type R EK9" },
+	{ "KANJOSJ", "Honda Civic EJ '92" },
+	{ "DOUBLE", "Honda CBR1000RR '08" },
+	{ "ENDURO", "Honda CB250" },
+	{ "JESTER", "Honda NSX (NC1) '17" },
+	{ "JESTER2", "Honda NSX (NC1) '17 (Race)" },
+	{ "JESTER3", "Toyota Supra (A80) '94" },
+	{ "JESTER4", "Toyota GR Supra (A90) '20" },
+	{ "DRIFTJESTER", "Toyota GR Supra (A90) (Drift)" },
+	{ "POSTLUDE", "Honda Prelude (SN) '78" },
+	{ "RT3000", "Honda S2000 '99" },
+	{ "SUGOI", "Honda Civic Type R FK8 '17" },
+	{ "THRUST", "Honda DN-01" },
+	{ "VERUS", "Arctic Cat Alterra 570" },
+	{ "VETO", "Rupp Dart A-Bone Kart '65" },
+	{ "VETO2", "Rupp Dart A-Bone Kart (Modern)" },
+	{ "VINDICATOR", "Honda NM4" },
 
--- DUDE / MAN
+	-- DUDE / MAN
 	{ "DUNDREARY", "" },
 	{ "LANDSTALKER", "Lincoln Navigator L '07" },
 	{ "LANDSTLKR2", "Lincoln Navigator L '18" },
@@ -361,13 +361,13 @@ local cars = {
 	{ "VIRGO2", "Mercury Cougar '77" },
 	{ "VIRGO3", "Mercury Cougar '77 (Custom)" },
 
--- Emperor / Lexus
+	-- Emperor / Lexus
 	{ "EMPEROR", "" },
 	{ "HABANERO", "Lexus RX (XU30) '03" },
 	{ "SHEAVA", "Lexus LF-LC Vision Gran Turismo" },
 	{ "VECTRE", "Lexus RC F (USC10) '19" },
 
--- Enus / Bentley
+	-- Enus / Bentley
 	{ "ENUS", "" },
 	{ "COGCABRI", "Bentley Continental GTC '06" },
 	{ "COG55", "Bentley Flying Spur LWB '09" },
@@ -385,13 +385,13 @@ local cars = {
 	{ "WINDSOR", "Rolls-Royce Wraith '14" },
 	{ "WINDSOR2", "Rolls-Royce Dawn '15" },
 
--- Fathom / Infiniti
+	-- Fathom / Infiniti
 	{ "FATHOM", "" },
 	{ "DRIFTFR36", "Infiniti G35 (V35) (Drift)" },
 	{ "FR36", "Infiniti G35 (V35)" },
 	{ "FQ2", "Infiniti QX70 (S51)" },
 
--- Gallivanter / Range Rover
+	-- Gallivanter / Range Rover
 	{ "GALLIVAN", "" },
 	{ "BALLER", "Range Rover Vogue1 '02" },
 	{ "BALLER2", "Range Rover Sport '13" },
@@ -402,68 +402,68 @@ local cars = {
 	{ "BALLER7", "Range Rover Sport SVR (L494) '18" },
 	{ "BALLER8", "Range Rover L460" },
 
--- Grotti / Ferrari
-  { "GROTTI", "" },
-  { "BESTIAGTS", "Ferrari FF '11" },
-  { "BRIOSO", "Fiat 500 '07" },
-  { "BRIOSO2", "Fiat 500 '70" },
-  { "BRIOSO3", "Fiat 500 '70 Widebody" },
-  { "CARBONIZ", "Ferrari F12" },
-  { "CHEETAH", "Ferrari Enzo" },
-  { "CHEETAH2", "Ferrari Testarossa" },
-  { "FURIA", "Pininfarina Battista (PF0)" },
-  { "GT500", "Ferrari 250 GT Berlinetta" },
-  { "ITALIGTO", "Ferrari 812 Superfast" },
-  { "ITALIRSX", "Ferrari SF90 Stradale" },
-  { "STINGERTT", "Ferrari Roma" },
-  { "STINGER", "Ferrari 250 GT California Spyder" },
-  { "STINGERG", "Ferrari 250 GTO" },
-  { "TURISMOR", "Ferrari LaFerrari" },
-  { "TURISMO2", "Ferrari F40" },
-  { "TURISMO3", "Ferrari F8" },
-  { "VIGILANTE", "Batmobile" },
-  { "VISIONE", "Ferrari Xezri Concept" },
-  { "PROTOTIPO", "Ferrari F80" },
+	-- Grotti / Ferrari
+	{ "GROTTI", "" },
+	{ "BESTIAGTS", "Ferrari FF '11" },
+	{ "BRIOSO", "Fiat 500 '07" },
+	{ "BRIOSO2", "Fiat 500 '70" },
+	{ "BRIOSO3", "Fiat 500 '70 Widebody" },
+	{ "CARBONIZ", "Ferrari F12" },
+	{ "CHEETAH", "Ferrari Enzo" },
+	{ "CHEETAH2", "Ferrari Testarossa" },
+	{ "FURIA", "Pininfarina Battista (PF0)" },
+	{ "GT500", "Ferrari 250 GT Berlinetta" },
+	{ "ITALIGTO", "Ferrari 812 Superfast" },
+	{ "ITALIRSX", "Ferrari SF90 Stradale" },
+	{ "STINGERTT", "Ferrari Roma" },
+	{ "STINGER", "Ferrari 250 GT California Spyder" },
+	{ "STINGERG", "Ferrari 250 GTO" },
+	{ "TURISMOR", "Ferrari LaFerrari" },
+	{ "TURISMO2", "Ferrari F40" },
+	{ "TURISMO3", "Ferrari F8" },
+	{ "VIGILANTE", "Batmobile" },
+	{ "VISIONE", "Ferrari Xezri Concept" },
+	{ "PROTOTIPO", "Ferrari F80" },
 
--- Hijak / Fisker
-  { "HIJAK", "" },
-  { "KHAMEL", "Fisker Karma '11" },
-  { "RUSTON", "VUHL 05 '08" },
+	-- Hijak / Fisker
+	{ "HIJAK", "" },
+	{ "KHAMEL", "Fisker Karma '11" },
+	{ "RUSTON", "VUHL 05 '08" },
 
--- HVY / CAT
-  { "AIRTUG", "Clark CT 30" },
-  { "APC", "BRDM-2" },
-  { "BARRACKS", "Oshkosh MTVR" },
-  { "BARRACKS2", "Freightliner M915A5" },
-  { "BARRAGE", "HDT Storm SRTV" },
-  { "BIFF", "Kenworth T800" },
-  { "CHERNOBOG", "MAZ-543M" },
-  { "HANDLER", "Taylor TEC950L" },
-  { "DOCKTUG", "Ottawa Commando 4x2" },
-  { "BULLDOZE", "Caterpillar 963D" },
-  { "DUMP", "Caterpillar 789" },
-  { "FORK", "LXE40 Spark Lithium Forklift Truck" },
-  { "INSURGENT2", "Terradyne GURKHA LAPV" },
-  { "INSURGENT", "Terradyne GURKHA RPV" },
-  { "INSURGENT3", "Terradyne GURKHA RPV (Custom)" },
-  { "MENACER", "Boss Hunting Truck" },
-  { "NIGHTSHARK", "Dartz" },
-  { "RIPLEY", "Schopf F296C" },
-  { "SCARAB", "Howe & Howe Ripsaw EV2 (Apocalypse)" },
-  { "SCARAB2", "Howe & Howe Ripsaw EV2 (Future Shock)" },
-  { "SCARAB3", "Howe & Howe Ripsaw EV2 (Nightmare)" },
-  { "SKYLIFT", "S-64 Skycrane" },
-  { "VETIR", "Renault TRM-4000" },
-	
--- Invetero / Corvette
-  { "INVERTO", "" },
-  { "COQUETTE", "Chevrolet Corvette C7 '14" },
-  { "COQUETTE2", "Chevrolet Corvette C2 '63" },
-  { "COQUETTE3", "Chevrolet Corvette C1 '61" },
-  { "COQUETTE4", "Chevrolet Corvette C8 '20" },
-  { "COQUETTE5", "Chevrolet Corvette C1 '56" },
+	-- HVY / CAT
+	{ "AIRTUG", "Clark CT 30" },
+	{ "APC", "BRDM-2" },
+	{ "BARRACKS", "Oshkosh MTVR" },
+	{ "BARRACKS2", "Freightliner M915A5" },
+	{ "BARRAGE", "HDT Storm SRTV" },
+	{ "BIFF", "Kenworth T800" },
+	{ "CHERNOBOG", "MAZ-543M" },
+	{ "HANDLER", "Taylor TEC950L" },
+	{ "DOCKTUG", "Ottawa Commando 4x2" },
+	{ "BULLDOZE", "Caterpillar 963D" },
+	{ "DUMP", "Caterpillar 789" },
+	{ "FORK", "LXE40 Spark Lithium Forklift Truck" },
+	{ "INSURGENT2", "Terradyne GURKHA LAPV" },
+	{ "INSURGENT", "Terradyne GURKHA RPV" },
+	{ "INSURGENT3", "Terradyne GURKHA RPV (Custom)" },
+	{ "MENACER", "Boss Hunting Truck" },
+	{ "NIGHTSHARK", "Dartz" },
+	{ "RIPLEY", "Schopf F296C" },
+	{ "SCARAB", "Howe & Howe Ripsaw EV2 (Apocalypse)" },
+	{ "SCARAB2", "Howe & Howe Ripsaw EV2 (Future Shock)" },
+	{ "SCARAB3", "Howe & Howe Ripsaw EV2 (Nightmare)" },
+	{ "SKYLIFT", "S-64 Skycrane" },
+	{ "VETIR", "Renault TRM-4000" },
 
--- Imponte / Pontiac
+	-- Invetero / Corvette
+	{ "INVERTO", "" },
+	{ "COQUETTE", "Chevrolet Corvette C7 '14" },
+	{ "COQUETTE2", "Chevrolet Corvette C2 '63" },
+	{ "COQUETTE3", "Chevrolet Corvette C1 '61" },
+	{ "COQUETTE4", "Chevrolet Corvette C8 '20" },
+	{ "COQUETTE5", "Chevrolet Corvette C1 '56" },
+
+	-- Imponte / Pontiac
 	{ "IMPONTE", "" },
 	{ "DUKES", "Dodge Charger '68" },
 	{ "DUKES2", "Dodge Charger '68 (Armored)" },
@@ -474,7 +474,7 @@ local cars = {
 	{ "RUINER2", "Pontiac Firebird K.I.T.T." },
 	{ "RUINER4", "Pontiac Firebird '98" },
 
--- Jobuilt / Peterbilt
+	-- Jobuilt / Peterbilt
 	{ "JOBUILT", "" },
 	{ "HAULER", "Peterbilt 362" },
 	{ "HAULER2", "Peterbilt 362 Pacemaker \"Goliath\"" },
@@ -489,7 +489,7 @@ local cars = {
 	{ "VELUM", "Piper PA-46 Malibu Meridian" },
 	{ "VELUM2", "Piper PA-46 Malibu Meridian (5-Seater)" },
 
--- Karin / Toyota
+	-- Karin / Toyota
 	{ "KARIN", "" },
 	{ "ASTROPE", "Toyota Camry (XV40) '06" },
 	{ "ASTEROPE2", "Toyota Camry (XV30) '01" },
@@ -515,14 +515,15 @@ local cars = {
 	{ "TECHNICAL2", "Toyota Hilux '83 (Armed)" },
 	{ "TECHNICAL3", "Toyota Hilux '83 (Armed)" },
 	{ "VIVANITE", "Toyota Sienna (XL40) '20" },
-	
--- Kraken / Triton
+	{ "Z190", "Nissan Fairlady Z (S30) '69" },
+
+	-- Kraken / Triton
 	{ "KRAKEN", "" },
 	{ "AVISA", "SEAmagine AURORA-6" },
 	{ "SUBMERS", "PC-1204 \"Clelia\"" },
 	{ "SUBMERS2", "Triton 1000/3" },
 
--- Lampadati / Maserati
+	-- Lampadati / Maserati
 	{ "LAMPADA", "" },
 	{ "CASCO", "Maserati 3500 GT" },
 	{ "CINQUEMILA", "Maserati Quattroporte 6" },
@@ -539,7 +540,7 @@ local cars = {
 	{ "TROPOS", "Lancia Stratos" },
 	{ "VISERIS", "De Tomaso Pantera" },
 
--- Maibatsu / Mitsubishi
+	-- Maibatsu / Mitsubishi
 	{ "MAIBATSU", "" },
 	{ "FROGGER", "Eurocopter EC130" },
 	{ "MANCHEZ", "FX Bikes Mountain Moto FX5" },
@@ -555,7 +556,7 @@ local cars = {
 	{ "SANCHEZ01", "Yamaha YZ450F" },
 	{ "SANCHEZ02", "Yamaha YZ450F" },
 
--- Mammoth / Hummer
+	-- Mammoth / Hummer
 	{ "MAMMOTH", "" },
 	{ "AVENGER", "Boeing V-22 Osprey" },
 	{ "DODO", "Grumman G-21 Goose" },
@@ -570,12 +571,12 @@ local cars = {
 	{ "THRUSTER", "Martin Jetpack P12" },
 	{ "TULA", "Kaman K-16B" },
 
--- Maxwell / Vauxhall
+	-- Maxwell / Vauxhall
 	{ "MAXWELL", "" },
 	{ "ASBO", "Vauxhall Corsa C" },
 	{ "VAGRANT", "Ariel Nomad" },
 
--- MTL / Mack
+	-- MTL / Mack
 	{ "MTL", "" },
 	{ "BRICKADE", "MAN TGS 26.480 6x6 Expedition Truck" },
 	{ "BRICKADE2", "MAN TGS 26.480 6x6 Expedition Truck" },
@@ -590,32 +591,32 @@ local cars = {
 	{ "POUNDER2", "Mack CH613" },
 	{ "WASTLNDR", "Heist Truck concept \"Mongo\"" },
 
--- Nagasaki / Kawasaki
-  { "NAGASAKI", "" },
-  { "BF400", "KTM 450 Rally" },
-  { "BLAZER", "Yamaha YFZ450R" },
-  { "BLAZER2", "Honda Fourtrax 250" },
-  { "BLAZER03", "Yamaha YFZ450R Hot Rod" },
-  { "BLAZER4", "Yamaha YFZ450R Sport" },
-  { "BLAZER5", "Gibbs Quadski" },
-  { "BUZZARD", "AH-6 Little Bird" },
-  { "BUZZARD2", "MH-6 Little Bird" },
-  { "CADDY", "E-Z-Go TXT" },
-  { "CADDY", "Golf Cart" },
-  { "CADDY3", "Golf Cart" },
-  { "CARBON", "Ducati 1199" },
-  { "CHIMERA", "Chimera" },
-  { "DINGHY", "Zodiac Hurricane CZ7" },
-  { "DINGHY3", "Zodiac Hurricane CZ7" },
-  { "DINGHY5", "Zodiac Hurricane CZ7 (Weaponized)" },
-  { "HAVOK", "Heli-Sport CH-7" },
-  { "OUTLAW", "Can-Am Maverick X3" },
-  { "SHINOBI", "Kawasaki Ninja 250R" },
-  { "SHOTARO", "Light Cycle \"Tron\"" },
-  { "STRYDER", "Lazareth Triazuma" },
-  { "MICROLIGHT", "Air Creation Racer" },
+	-- Nagasaki / Kawasaki
+	{ "NAGASAKI", "" },
+	{ "BF400", "KTM 450 Rally" },
+	{ "BLAZER", "Yamaha YFZ450R" },
+	{ "BLAZER2", "Honda Fourtrax 250" },
+	{ "BLAZER03", "Yamaha YFZ450R Hot Rod" },
+	{ "BLAZER4", "Yamaha YFZ450R Sport" },
+	{ "BLAZER5", "Gibbs Quadski" },
+	{ "BUZZARD", "AH-6 Little Bird" },
+	{ "BUZZARD2", "MH-6 Little Bird" },
+	{ "CADDY", "E-Z-Go TXT" },
+	{ "CADDY", "Golf Cart" },
+	{ "CADDY3", "Golf Cart" },
+	{ "CARBON", "Ducati 1199" },
+	{ "CHIMERA", "Chimera" },
+	{ "DINGHY", "Zodiac Hurricane CZ7" },
+	{ "DINGHY3", "Zodiac Hurricane CZ7" },
+	{ "DINGHY5", "Zodiac Hurricane CZ7 (Weaponized)" },
+	{ "HAVOK", "Heli-Sport CH-7" },
+	{ "OUTLAW", "Can-Am Maverick X3" },
+	{ "SHINOBI", "Kawasaki Ninja 250R" },
+	{ "SHOTARO", "Light Cycle \"Tron\"" },
+	{ "STRYDER", "Lazareth Triazuma" },
+	{ "MICROLIGHT", "Air Creation Racer" },
 
--- Obey / Audi
+	-- Obey / Audi
 	{ "OBEY", "" },
 	{ "DRAFTER", "Audi RS5 Coupe (8W6)" },
 	{ "NINEF", "Audi R8 (Type 42)" },
@@ -629,7 +630,7 @@ local cars = {
 	{ "TAILGATER", "Audi A6 (C6)" },
 	{ "TAILGATER2", "Audi RS3 Saloon (8V)" },
 
--- Ocelot / Jaguar
+	-- Ocelot / Jaguar
 	{ "OCELOT", "" },
 	{ "ARDENT", "Lotus Esprit '93" },
 	{ "F620", "Jaguar XK '06" },
@@ -644,8 +645,8 @@ local cars = {
 	{ "SWINGER", "Jaguar XJ13 '66" },
 	{ "VIRTUE", "Lotus Evija" },
 	{ "XA21", "Jaguar C-X75 '10" },
-	
--- Overflod / Koenigsegg
+
+	-- Overflod / Koenigsegg
 	{ "OVERFLOD", "" },
 	{ "AUTARCH", "Scuderia Cameron Glickenhaus SCG 003" },
 	{ "ENTITYXF", "Koenigsegg CCX '06" },
@@ -656,7 +657,7 @@ local cars = {
 	{ "TYRANT", "Apollo Arrow '16" },
 	{ "ZENO", "SSC Tuatara '20" },
 
--- Pegassi / Lamborghini, Pagani, Ducati, BMW
+	-- Pegassi / Lamborghini, Pagani, Ducati, BMW
 	{ "PEGASSI", "" },
 	{ "BATI", "Ducati 1098" },
 	{ "BATI2", "Ducati 1098 R" },
@@ -688,32 +689,32 @@ local cars = {
 	{ "ZENTORNO", "Lamborghini Sesto Elemento '12" },
 	{ "ZORRUSSO", "Italdesign Zerouno '17" },
 
--- Penaud / Renault
+	-- Penaud / Renault
 	{ "PENAUD", "" },
 	{ "COUREUR", "Renault R5 Turbo 3E '22" },
 
--- Pfister / Porsche
-  { "PFISTER", "" },
-  { "ASTRON", "Porsche Macan (95B)" },
-  { "GROWLER", "Porsche 718 Cayman" },
-  { "NEON", "Porsche Taycan" },
-  { "PFISTER811", "Porsche 918 Spyder" },
-  { "COMET2", "Porsche 997 GT2" },
-  { "COMET3", "Porsche 911 Turbo (964)" },
-  { "COMET4", "Porsche 911 Safari" },
-  { "COMET5", "Porsche 997 GT2 RS" },
-  { "COMET6", "Porsche 911 (992)" },
-  { "COMET7", "Porsche 911 (992) Cabriolet" },
+	-- Pfister / Porsche
+	{ "PFISTER", "" },
+	{ "ASTRON", "Porsche Macan (95B)" },
+	{ "GROWLER", "Porsche 718 Cayman" },
+	{ "NEON", "Porsche Taycan" },
+	{ "PFISTER811", "Porsche 918 Spyder" },
+	{ "COMET2", "Porsche 997 GT2" },
+	{ "COMET3", "Porsche 911 Turbo (964)" },
+	{ "COMET4", "Porsche 911 Safari" },
+	{ "COMET5", "Porsche 997 GT2 RS" },
+	{ "COMET6", "Porsche 911 (992)" },
+	{ "COMET7", "Porsche 911 (992) Cabriolet" },
 
--- Principe / Ducati
-  { "PRINCIPL", "" },
-  { "DEVESTE", "Devel Sixteen '18" },
-  { "DIABLOUS", "Ducati Streetfighter 848 '15" },
-  { "DIABLOUS2", "Ducati Streetfighter 848 (Custom)" },
-  { "LECTRO", "Ducati Streetfighter S" },
-  { "NEMESIS", "Ducati Monster" },
-	
--- Progen / McLaren
+	-- Principe / Ducati
+	{ "PRINCIPL", "" },
+	{ "DEVESTE", "Devel Sixteen '18" },
+	{ "DIABLOUS", "Ducati Streetfighter 848 '15" },
+	{ "DIABLOUS2", "Ducati Streetfighter 848 (Custom)" },
+	{ "LECTRO", "Ducati Streetfighter S" },
+	{ "NEMESIS", "Ducati Monster" },
+
+	-- Progen / McLaren
 	{ "PROGEN", "" },
 	{ "EMERUS", "McLaren Senna GTR" },
 	{ "GP1", "McLaren F1" },
@@ -722,20 +723,20 @@ local cars = {
 	{ "FORMULA", "McLaren MP4/6" },
 	{ "T20", "McLaren P1" },
 	{ "TYRUS", "McLaren F1 GTR" },
-	
--- RUNE / VAZ, Lada
-  { "RUNE", "" },
-  { "CHEBUREK", "VAZ 2106" },
-  { "KOSATKA", "Delta III-class submarine" },
-  { "ZHABA", "SHERP ATV" },
 
--- Schyster / Chrysler
+	-- RUNE / VAZ, Lada
+	{ "RUNE", "" },
+	{ "CHEBUREK", "VAZ 2106" },
+	{ "KOSATKA", "Delta III-class submarine" },
+	{ "ZHABA", "SHERP ATV" },
+
+	-- Schyster / Chrysler
 	{ "SCHYSTER", "" },
 	{ "DEVIANT", "Javelin AMX Defiant" },
---  { "DEVIANT", "AMC Javelin '70" },
+	--  { "DEVIANT", "AMC Javelin '70" },
 	{ "FUSILADE", "Chrysler Crossfire '04" },
 
--- Shitzu / Suzuki
+	-- Shitzu / Suzuki
 	{ "SHITZU", "" },
 	{ "DEFILER", "Suzuki Bandit 1200" },
 	{ "HAKUCHOU", "Suzuki GSX-R 1300 Hayabusa" },
@@ -744,7 +745,7 @@ local cars = {
 	{ "PCJ", "Honda CB600F" },
 	{ "VADER", "Kawasaki Z1000" },
 
--- Truffade / Bugatti
+	-- Truffade / Bugatti
 	{ "TRUFFADE", "" },
 	{ "ADDER", "Bugatti Veyron Super Sport '10" },
 	{ "NERO", "Bugatti Chiron" },
@@ -752,7 +753,7 @@ local cars = {
 	{ "THRAX", "Bugatti Divo" },
 	{ "ZTYPE", "Bugatti Type 57SC Atlantic '38" },
 
--- Ubermacht / BMW
+	-- Ubermacht / BMW
 	{ "UBERMACH", "" },
 	{ "CYPHER", "BMW M2 F87" },
 	{ "DRIFTCYPHER", "BMW M2 F87 '15" },
@@ -772,7 +773,7 @@ local cars = {
 	{ "ZION2", "BMW M6 Convertible (E64)" },
 	{ "ZION3", "BMW M635CSi (E24)" },
 
--- Vapid / Ford, Chevrolet, International, Lincoln
+	-- Vapid / Ford, Chevrolet, International, Lincoln
 	{ "VAPID", "" },
 	{ "ALEUTIAN", "Ford Expedition '18 (U553)" },
 	{ "BENSON", "International 4000 series '89" },
@@ -840,8 +841,8 @@ local cars = {
 	{ "TAIPAN", "Hennessey Venom F5" },
 	{ "TROPHY", "Ford F-150 Baja" },
 	{ "TROPHY2", "Red Bull SMG Buggy" },
-	
--- Vulcar / Volvo, Datsun
+
+	-- Vulcar / Volvo, Datsun
 	{ "VULCAR", "" },
 	{ "FAGALOA", "Volvo Amazon Station Wagon" },
 	{ "INGOT", "Volvo V70 (R)" },
@@ -850,7 +851,7 @@ local cars = {
 	{ "WARRENER", "Datsun 510" },
 	{ "WARRENER2", "Datsun Sunny Hakotora Pickup" },
 
--- Weeny / MINI
+	-- Weeny / MINI
 	{ "WEENY", "" },
 	{ "DYNASTY", "Hindustan Ambassador '58" },
 	{ "ISSI2", "Mini Cooper R50 '01" },
@@ -861,7 +862,7 @@ local cars = {
 	{ "ISSI7", "Mini Hatch '18" },
 	{ "ISSI8", "Mini John Cooper Works WRC" },
 
--- Western / Harley-Davidson
+	-- Western / Harley-Davidson
 	{ "WESTERN", "" },
 	{ "BAGGER", "Harley Davidson Touring Road Glide Custom '13" },
 	{ "BESRA", "Aero L-39 Albatros" },
@@ -883,19 +884,20 @@ local cars = {
 	{ "WOLFSBANE", "Harley-Davidson 1200" },
 	{ "ZOMBIEA", "Exile Hot Rod" },
 	{ "ZOMBIEB", "Exile Hot Rod" },
-	
--- Willard / Plymouth
+
+	-- Willard / Plymouth
 	{ "WILLARD", "" },
 	{ "EUDORA", "Buick Electra '59" },
 	{ "FACTION", "Buick Regal '82" },
 	{ "FACTION2", "Buick Regal (Custom)" },
 	{ "FACTION3", "Buick Regal (Custom Donk)" },
-	
--- Zirconium / Mercury
+
+	-- Zirconium / Mercury
 	{ "ZIRCONIU", "" },
 	{ "STRATUM", "Honda Accord Wagon '94" },
 	{ "JOURNEY", "Triple E '77" },
 	{ "JOURNEY2", "Triple E '77" },
+
 
 	{ "ANNIHL", "Sikorsky UH-60 Black Hawk" },
 	{ "ANNIHLATOR2", "Sikorsky UH-60 Black Hawk (Stealh)" },
@@ -916,15 +918,17 @@ local cars = {
 	{ "NOKOTA", "North American P-51 Mustang" },
 	{ "RHINO", "Leopard 2A4" },
 	{ "SAVAGE", "Mil Mi-24 \"Hind\"" },
-	{ "STARLING", "Messerschmitt Me 163 Komet" },
-	{ "STRIKEFORCE", "A-10 Thunderbolt II" },
 	{ "SPARROW", "Bell H-13 Sioux" },
 	{ "SPARROW2", "Bell H-13 Sioux" },
 	{ "SPARROW3", "Bell H-13 Sioux" },
+	{ "STARLING", "Messerschmitt Me 163 Komet" },
+	{ "STUNT", "Zivko Edge 540" },
+	{ "STRIKEFORCE", "A-10 Thunderbolt II" },
 	{ "TITAN", "Lockheed C-130 Hercules" },
 	{ "TRSMALL2", "M51 Trailer Mount" },
 	{ "VOLATOL", "Avro Vulcan" },
 	{ "VOMFEUER", "" }
+
 }
 
 local weapons = {
@@ -1008,7 +1012,7 @@ menu.action(realnames, "Activate RWN <3", { "rwn" }, "Replaces Weapon Names With
 	util.toast("Done <3")
 end)
 
-menu.my_root():divider("Version: v3.7.4")
+menu.my_root():divider("Version: v3.7.5")
 
 menu.my_root():action("Check for Update <3", { "rcnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
