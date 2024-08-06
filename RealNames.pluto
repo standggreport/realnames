@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.7.5"
+local SCRIPT_VERSION = "3.7.6"
 
 ---
 --- Auto-Updater Lib Install
@@ -865,7 +865,6 @@ local cars = {
 	-- Western / Harley-Davidson
 	{ "WESTERN", "" },
 	{ "BAGGER", "Harley Davidson Touring Road Glide Custom '13" },
-	{ "BESRA", "Aero L-39 Albatros" },
 	{ "CLIFFHANGER", "Harley-Davidson XR-750" },
 	{ "DAEMON", "Harley-Davidson Dyna Street Bob" },
 	{ "DAEMON2", "Harley-Davidson Dyna Street Bob (Custom)" },
@@ -877,13 +876,22 @@ local cars = {
 	{ "POWERSURGE", "Harley-Davidson LiveWire '19" },
 	{ "RATBIKE", "Harley-Davidson 1200" },
 	{ "REEVER", "ARCH Method 143" },
-	{ "ROGUE", "Beechcraft T-6 Texan II" },
 	{ "RROCKET", "Rocket II Trike" },
-	{ "SEABREEZE", "Seawind 300с" },
 	{ "SOVEREIGN", "Harley-Davidson Road King" },
 	{ "WOLFSBANE", "Harley-Davidson 1200" },
 	{ "ZOMBIEA", "Exile Hot Rod" },
 	{ "ZOMBIEB", "Exile Hot Rod" },
+	
+	-- Western Company / Planes, helicopters
+	{ "ANNIHL", "Sikorsky UH-60 Black Hawk" },
+	{ "ANNIHLATOR2", "Sikorsky UH-60 Black Hawk (Stealh)" },
+	{ "BESRA", "Aero L-39 Albatros" },
+	{ "CARGOBOB", "Sikorsky MH-53 Pave Low" },
+	{ "CUBAN800", "Piper PA-30 Twin Comanche" },
+	{ "DUSTER", "Stearman PT-17" },
+	{ "STUNT", "Zivko Edge 540" },
+	{ "ROGUE", "Beechcraft T-6 Texan II" },
+	{ "SEABREEZE", "Seawind 300с" },
 
 	-- Willard / Plymouth
 	{ "WILLARD", "" },
@@ -898,18 +906,14 @@ local cars = {
 	{ "JOURNEY", "Triple E '77" },
 	{ "JOURNEY2", "Triple E '77" },
 
-
-	{ "ANNIHL", "Sikorsky UH-60 Black Hawk" },
-	{ "ANNIHLATOR2", "Sikorsky UH-60 Black Hawk (Stealh)" },
+	-- Other
 	{ "AVARUS", "Harley-Davidson Dyna" },
 	{ "BAGGER", "Harley-Davidson Road King" },
 	{ "BARRAGE", "Polaris MRZR" },
-	{ "BOMBUSHKA", "Antonov An-124" },
+	{ "BOMBUSHKA", "Antonov An-12" },
 	{ "BRAWLER", "Local Motors Rally Fighter" },
 	{ "BTYPE", "Bentley Blower" },
 	{ "CABLECAR", "San Francisco Cable Car" },
-	{ "CARGOBOB", "Sikorsky MH-53 Pave Low" },
-	{ "CUBAN800", "Cessna 310" },
 	{ "DLOADER", "Ford Model A Pickup" },
 	{ "DOCKTUG", "Yard Tug" },
 	{ "HUNTER", "Boeing AH-64 Apache" },
@@ -922,12 +926,13 @@ local cars = {
 	{ "SPARROW2", "Bell H-13 Sioux" },
 	{ "SPARROW3", "Bell H-13 Sioux" },
 	{ "STARLING", "Messerschmitt Me 163 Komet" },
-	{ "STUNT", "Zivko Edge 540" },
 	{ "STRIKEFORCE", "A-10 Thunderbolt II" },
 	{ "TITAN", "Lockheed C-130 Hercules" },
 	{ "TRSMALL2", "M51 Trailer Mount" },
 	{ "VOLATOL", "Avro Vulcan" },
 	{ "VOMFEUER", "" }
+	{ "CARGOPLANE", "Antonov An-124 Ruslan" }
+	{ "JET", "Boeing 747-400" }
 
 }
 
@@ -1012,7 +1017,7 @@ menu.action(realnames, "Activate RWN <3", { "rwn" }, "Replaces Weapon Names With
 	util.toast("Done <3")
 end)
 
-menu.my_root():divider("Version: v3.7.5")
+menu.my_root():divider("Version: v3.7.6")
 
 menu.my_root():action("Check for Update <3", { "rcnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
