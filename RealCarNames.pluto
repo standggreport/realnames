@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.7.1"
+local SCRIPT_VERSION = "3.7.2"
 
 ---
 --- Auto-Updater Lib Install
@@ -41,28 +41,28 @@ local cars = {
 -- Albany / Cadillac, Lincoln
 	{ "ALBANY", "" },
 	{ "ALPHA", "Cadillac ATS '13" },
-    { "BRIGHAM", "Cadillac Miller-Meteor '59" },
+	{ "BRIGHAM", "Cadillac Miller-Meteor '59" },
 	{ "BTYPE2", "Munster Koach" },
-    { "BUCCANEE", "Chevrolet Monte Carlo '70" },
-    { "BUCCANEE2", "Chevrolet Monte Carlo Custom" },
-    { "CAVCADE", "Cadillac Escalade '02" },
-    { "CAVCADE2", "Cadillac Escalade '07" },
-    { "CAVALCADE3", "Cadillac Escalade-V '23" },
-    { "EMPEROR", "Cadillac Sedan DeVille '77" },
-    { "EMPEROR2", "Cadillac Sedan DeVille '77" },
-    { "HERMES", "Mercury Eight '49" },
-    { "LURCHER", "Funeral Coach" },
-    { "MANANA", "Cadillac Eldorado '69" },
-    { "MANANA2", "Cadillac Eldorado Custom" },
-    { "POLICEO2", "Cadillac Seville Police" },
-    { "PRIMO", "Cadillac Seville '92" },
-    { "PRIMO2", "Cadillac Seville Custom" },
+	{ "BUCCANEE", "Chevrolet Monte Carlo '70" },
+	{ "BUCCANEE2", "Chevrolet Monte Carlo Custom" },
+	{ "CAVCADE", "Cadillac Escalade '02" },
+	{ "CAVCADE2", "Cadillac Escalade '07" },
+	{ "CAVALCADE3", "Cadillac Escalade-V '23" },
+	{ "EMPEROR", "Cadillac Sedan DeVille '77" },
+	{ "EMPEROR2", "Cadillac Sedan DeVille '77" },
+	{ "HERMES", "Mercury Eight '49" },
+	{ "LURCHER", "Funeral Coach" },
+	{ "MANANA", "Cadillac Eldorado '69" },
+	{ "MANANA2", "Cadillac Eldorado Custom" },
+	{ "POLICEO2", "Cadillac Seville Police" },
+	{ "PRIMO", "Cadillac Seville '92" },
+	{ "PRIMO2", "Cadillac Seville Custom" },
 	{ "ROOSEVELT", "Cadillac 341A Town Sedan '28" },
-    { "ROOSEVELT2", "Cadillac 341A Town Sedan '28" },
-    { "STRETCH", "Lincoln Town Car Limo '98" },
-    { "VIRGO", "Cadillac Eldorado '70" },
-    { "VSTR", "Cadillac CTS-V '16" },
-    { "WASHINGT", "Lincoln Town Car '98" },
+	{ "ROOSEVELT2", "Cadillac 341A Town Sedan '28" },
+	{ "STRETCH", "Lincoln Town Car Limo '98" },
+	{ "VIRGO", "Cadillac Eldorado '70" },
+	{ "VSTR", "Cadillac CTS-V '16" },
+	{ "WASHINGT", "Lincoln Town Car '98" },
 
 -- 	Annis / Nissan, Mazda
 	{ "ANNIS", "" },
@@ -407,7 +407,7 @@ local cars = {
 	{ "BRIOSO", "Fiat 500 '07" },
 	{ "BRIOSO2", "Fiat 500 '70" },
 	{ "BRIOSO3", "Fiat 500 '70 Widebody" },
-    { "CARBONIZ", "Ferrari F12" },
+	{ "CARBONIZ", "Ferrari F12" },
 	{ "CHEETAH", "Ferrari Enzo" },
 	{ "CHEETAH2", "Ferrari Testarossa" },
 	{ "FURIA", "Pininfarina Battista (PF0)" },
@@ -430,37 +430,37 @@ local cars = {
 	{ "RUSTON", "VUHL 05 '08" },
 
 -- HVY / CAT
-    { "AIRTUG", "Clark CT 30" },
-    { "APC", "BRDM-2" },
-    { "BARRACKS", "Oshkosh MTVR" },
-    { "BARRACKS2", "Freightliner M915A5" },
-    { "BARRAGE", "HDT Storm SRTV" },
-    { "BIFF", "Kenworth T800" },
-    { "CHERNOBOG", "MAZ-543M" },
-    { "HANDLER", "Taylor TEC950L" },
-    { "DOCKTUG", "Ottawa Commando 4x2" },
-    { "BULLDOZE", "Caterpillar 963D" },
-    { "DUMP", "Caterpillar 789" },
-    { "FORK", "LXE40 Spark Lithium Forklift Truck" },
-    { "INSURGENT2", "Terradyne GURKHA LAPV" },
-    { "INSURGENT", "Terradyne GURKHA RPV" },
-    { "INSURGENT3", "Terradyne GURKHA RPV (Custom)" },
-    { "MENACER", "Boss Hunting Truck" },
-    { "NIGHTSHARK", "Dartz" },
-    { "RIPLEY", "Schopf F296C" },
-    { "SCARAB", "Howe & Howe Ripsaw EV2 (Apocalypse)" },
-    { "SCARAB2", "Howe & Howe Ripsaw EV2 (Future Shock)" },
-    { "SCARAB3", "Howe & Howe Ripsaw EV2 (Nightmare)" },
-    { "SKYLIFT", "S-64 Skycrane" },
-    { "VETIR", "Renault TRM-4000" },
+	{ "AIRTUG", "Clark CT 30" },
+	{ "APC", "BRDM-2" },
+	{ "BARRACKS", "Oshkosh MTVR" },
+	{ "BARRACKS2", "Freightliner M915A5" },
+	{ "BARRAGE", "HDT Storm SRTV" },
+	{ "BIFF", "Kenworth T800" },
+	{ "CHERNOBOG", "MAZ-543M" },
+	{ "HANDLER", "Taylor TEC950L" },
+	{ "DOCKTUG", "Ottawa Commando 4x2" },
+	{ "BULLDOZE", "Caterpillar 963D" },
+	{ "DUMP", "Caterpillar 789" },
+	{ "FORK", "LXE40 Spark Lithium Forklift Truck" },
+	{ "INSURGENT2", "Terradyne GURKHA LAPV" },
+	{ "INSURGENT", "Terradyne GURKHA RPV" },
+	{ "INSURGENT3", "Terradyne GURKHA RPV (Custom)" },
+	{ "MENACER", "Boss Hunting Truck" },
+	{ "NIGHTSHARK", "Dartz" },
+	{ "RIPLEY", "Schopf F296C" },
+	{ "SCARAB", "Howe & Howe Ripsaw EV2 (Apocalypse)" },
+	{ "SCARAB2", "Howe & Howe Ripsaw EV2 (Future Shock)" },
+	{ "SCARAB3", "Howe & Howe Ripsaw EV2 (Nightmare)" },
+	{ "SKYLIFT", "S-64 Skycrane" },
+	{ "VETIR", "Renault TRM-4000" },
 	
 -- Invetero / Corvette
 	{ "INVERTO", "" },
-    { "COQUETTE", "Chevrolet Corvette C7 '14" },
-    { "COQUETTE2", "Chevrolet Corvette C2 '63" },
-    { "COQUETTE3", "Chevrolet Corvette C1 '61" },
-    { "COQUETTE4", "Chevrolet Corvette C8 '20" },
-    { "COQUETTE5", "Chevrolet Corvette C1 '56" },
+	{ "COQUETTE", "Chevrolet Corvette C7 '14" },
+	{ "COQUETTE2", "Chevrolet Corvette C2 '63" },
+	{ "COQUETTE3", "Chevrolet Corvette C1 '61" },
+	{ "COQUETTE4", "Chevrolet Corvette C8 '20" },
+	{ "COQUETTE5", "Chevrolet Corvette C1 '56" },
 
 -- Imponte / Pontiac
 	{ "IMPONTE", "" },
@@ -591,17 +591,17 @@ local cars = {
 -- Nagasaki / Kawasaki
 	{ "NAGASAKI", "" },
 	{ "BF400", "KTM 450 Rally" },
-    { "BLAZER", "Yamaha YFZ450R" },
+	{ "BLAZER", "Yamaha YFZ450R" },
 	{ "BLAZER2", "Honda Fourtrax 250" },
 	{ "BLAZER03", "Yamaha YFZ450R Hot Rod" },
-    { "BLAZER4", "Yamaha YFZ450R Sport" },
+	{ "BLAZER4", "Yamaha YFZ450R Sport" },
 	{ "BLAZER5", "Gibbs Quadski" },
-    { "BUZZARD", "AH-6 Little Bird" },
-    { "BUZZARD2", "MH-6 Little Bird" },
+	{ "BUZZARD", "AH-6 Little Bird" },
+	{ "BUZZARD2", "MH-6 Little Bird" },
 	{ "CADDY", "E-Z-Go TXT" },
-    { "CADDY", "Golf Cart" },
-    { "CADDY3", "Golf Cart" },
-    { "CARBON", "Ducati 1199" },
+	{ "CADDY", "Golf Cart" },
+	{ "CADDY3", "Golf Cart" },
+	{ "CARBON", "Ducati 1199" },
 	{ "CHIMERA", "Chimera" },
 	{ "DINGHY", "Zodiac Hurricane CZ7" },
 	{ "DINGHY3", "Zodiac Hurricane CZ7" },
@@ -691,20 +691,20 @@ local cars = {
 	{ "COUREUR", "Renault R5 Turbo 3E '22" },
 
 -- Pfister / Porsche
-    { "PFISTER", "" },
-    { "ASTRON", "Porsche Macan (95B)" },
+	{ "PFISTER", "" },
+	{ "ASTRON", "Porsche Macan (95B)" },
 	{ "GROWLER", "Porsche 718 Cayman" },
 	{ "NEON", "Porsche Taycan" },
 	{ "PFISTER811", "Porsche 918 Spyder" },
-    { "COMET2", "Porsche 997 GT2" },
-    { "COMET3", "Porsche 930 Turbo" },
-    { "COMET4", "Porsche 911 Safari" },
-    { "COMET5", "Porsche 997 GT2 RS" },
-    { "COMET6", "Porsche 911 (992)" },
+	{ "COMET2", "Porsche 997 GT2" },
+	{ "COMET3", "Porsche 911 Turbo (964)" },
+	{ "COMET4", "Porsche 911 Safari" },
+	{ "COMET5", "Porsche 997 GT2 RS" },
+	{ "COMET6", "Porsche 911 (992)" },
 	{ "COMET7", "Porsche 911 (992) Cabriolet" },
 
 -- Principe / Ducati
-    { "PRINCIPL", "" },
+	{ "PRINCIPL", "" },
 	{ "DEVESTE", "Devel Sixteen '18" },
 	{ "DIABLOUS", "Ducati Streetfighter 848 '15" },
 	{ "DIABLOUS2", "Ducati Streetfighter 848 (Custom)" },
@@ -723,14 +723,14 @@ local cars = {
 	
 -- RUNE / VAZ, Lada
 	{ "RUNE", "" },
-    { "CHEBUREK", "VAZ 2106" },
+	{ "CHEBUREK", "VAZ 2106" },
 	{ "KOSATKA", "Delta III-class submarine" },
 	{ "ZHABA", "SHERP ATV" },
 
 -- Schyster / Chrysler
 	{ "SCHYSTER", "" },
 	{ "DEVIANT", "Javelin AMX Defiant" },
---  { "DEVIANT", "AMC Javelin '70" },
+    --  { "DEVIANT", "AMC Javelin '70" },
 	{ "FUSILADE", "Chrysler Crossfire '04" },
 
 -- Shitzu / Suzuki
@@ -919,74 +919,65 @@ local cars = {
 	{ "TRSMALL2", "M51 Trailer Mount" },
 	{ "VOLATOL", "Avro Vulcan" }
 
-}
---[[
-local def = {
-
--- Albany / Cadillac, Lincoln
-	{ "ALPHA", "Testing" },
-
-}
-]]
 local weapons = {
-	{ "WT_SG_ASL", "UTAS UTS-15" },
-	{ "WT_MUSKET", "Brown Bess" },
-	{ "WT_SG_ASL", "UTAS UTS-15" },
-	{ "WT_DBSHGN", "Zabala Sawed-Off Shotgun" },
-	{ "WT_AUTOSHGN", "Atchisson AA-12" },
-	{ "WT_GL", "M32 Milkor MGL" },
-	{ "WT_RPG", "RPG-7" },
-	{ "WT_MINIGUN", "M134 Minigun" },
-	{ "WT_RAILGUN", "ARC-920" },
-	{ "WT_HOMLNCH", "FIM-92 Stinger" },
-	{ "WT_CMPGL", "M79 Sawed-Off" },
-	{ "WT_GNADE", "M61 Grenade" },
-	{ "WT_GNADE_STK", "C-4" },
-	{ "WT_PETROL", "Kraftstoff 20L" },
-	{ "WT_SNIP_RIF", "AI Arctic Warfare" },
-	{ "WT_SNIP_HVY", "Barrett M82A1" },
-	{ "WT_SNIP_HVY2", "Serbu BFG-50A" },
-	{ "WT_MKRIFLE", "M39 EMR" },
-	{ "WT_MKRIFLE2", "Springfield M1A Loaded" },
-	{ "WT_UNARMED", "Fists" },
-	{ "WT_COMBATPDW", "SIG MPX" },
-	{ "WT_MG", "PKM" },
-	{ "WT_MG_CBT", "M249" },
-	{ "WT_MG_CBT2", "M60E4" },
-	{ "WT_GUSNBRG", "M1928A1 Thompson" },
-	{ "WT_RIFLE_ASL", "Type 56-2" },
-	{ "WT_RIFLE_ASL2", "AK-12" },
-	{ "WT_RIFLE_CBN", "H&K 416" },
-	{ "WT_RIFLE_CBN2", "Remington R5 RGP" },
-	{ "WT_RIFLE_ADV", "Tavor TAR-21" },
-	{ "WT_SPCARBINE", "H&K G36C" },
-	{ "WT_SPCARBINE2", "H&K G36K" },
-	{ "WT_PIST", "Beretta 92FS" },
-	{ "WT_PIST2", "Beretta M9A3" },
-	{ "WT_PIST_CBT", "P2000" },
-	{ "WT_PIST_50", "Five-seven" },
-	{ "WT_SNSPISTOL", "Heckler & Koch P7M10" },
-	{ "WT_SNSPISTOL2", "AMT Backup" },
-	{ "WT_HVYPISTOL", "Entreprise Wide Body 1911" },
-	{ "WT_VPISTOL", "FN Model 1922" },
-	{ "WT_MKPISTOL", "Thompson/Center Contender G2" },
-	{ "WT_REVOLVER", "ASG Dan Wesson" },
-	{ "WT_REVOLVER2", "Chiappa Rhino" },
-	{ "WT_REV_DA", "Colt M1892" },
-	{ "WT_PIST_AP", "Colt SCAMP" },
-	{ "WT_SMG_MCR", "Mini Uzi" },
-	{ "WT_MCHPIST", "TEC-9" },
-	{ "WT_MINISMG", "Skorpion Vz. 61" },
-	{ "WT_SMG", "MP5A3" },
-	{ "WT_SMG2", "SIG Sauer MPX" },
-	{ "WT_SMG_ASL", "FN P90" },
-	{ "WT_SPCARBINE2", "H&K G36K" },
-	{ "WT_BULLRIFLE", "QBZ-95" },
-	{ "WT_BULLRIFLE2", "VHS-2" },
-	{ "WT_CMPRIFLE", "AKS-74U" },
+
+	{ "WT_SG_ASL", "UTAS UTS-15", "WTSGASL" },
+	{ "WT_MUSKET", "Brown Bess", "WTMUSKET" },
+	{ "WT_HVYSHGN", "Saiga 12K", "WTHVYSHGN" },
+	{ "WT_DBSHGN", "Zabala Sawed-Off Shotgun", "WTDBSHGN" },
+	{ "WT_AUTOSHGN", "Atchisson AA-12", "WTAUTOSHGN" },
+	{ "WT_GL", "M32 Milkor MGL", "WTGL" },
+	{ "WT_RPG", "RPG-7", "WTRPG" },
+	{ "WT_MINIGUN", "M134 Minigun", "WTMINIGUN" },
+	{ "WT_RAILGUN", "ARC-920", "WTRAILGUN" },
+	{ "WT_HOMLNCH", "FIM-92 Stinger", "WTHOMLNCH" },
+	{ "WT_CMPGL", "M79 Sawed-Off", "WTCMPGL" },
+	{ "WT_GNADE", "M61 Grenade", "WTGNADE" },
+	{ "WT_GNADE_STK", "C-4", "WTGNADESTK" },
+	{ "WT_PETROL", "Kraftstoff 20L", "WTPETROL" },
+	{ "WT_SNIP_RIF", "AI Arctic Warfare", "WTSNIPRIF" },
+	{ "WT_SNIP_HVY", "Barrett M82A1", "WTSNIPHVY" },
+	{ "WT_SNIP_HVY2", "Serbu BFG-50A", "WTSNIPHVY2" },
+	{ "WT_MKRIFLE", "M39 EMR", "WTMKRIFLE" },
+	{ "WT_MKRIFLE2", "Springfield M1A Loaded", "WTMKRIFLE2" },
+	{ "WT_UNARMED", "Fists", "WTUNARMED" },
+	{ "WT_COMBATPDW", "SIG MPX", "WTCOMBATPDW" },
+	{ "WT_MG", "PKM", "WTMG" },
+	{ "WT_MG_CBT", "M249", "WTMGCBT" },
+	{ "WT_MG_CBT2", "M60E4", "WTMGCBT2" },
+	{ "WT_GUSNBRG", "M1928A1 Thompson", "WTGUSNBRG" },
+	{ "WT_RIFLE_ASL", "Type 56-2", "WTRIFLEASL" },
+	{ "WT_RIFLE_ASL2", "AK-12", "WTRIFLEASL2" },
+	{ "WT_RIFLE_CBN", "H&K 416", "WTRIFLECBN" },
+	{ "WT_RIFLE_CBN2", "Remington R5 RGP", "WTRIFLECBN2" },
+	{ "WT_RIFLE_ADV", "Tavor TAR-21", "WTRIFLEADV" },
+	{ "WT_SPCARBINE", "H&K G36C", "WTSPCARBINE" },
+	{ "WT_SPCARBINE2", "H&K G36K", "WTSPCARBINE2" },
+	{ "WT_PIST", "Taurus PT92AF", "WTPIST" },
+	{ "WT_PIST2", "Beretta M9A3", "WTPIST2" },
+	{ "WT_PIST_CBT", "H&K P2000", "WTPISTCBT" },
+	{ "WT_PIST_50", "FN Five-seven", "WTPIST50" },
+	{ "WT_SNSPISTOL", "Heckler & Koch P7M10", "WTSNSPISTOL" },
+	{ "WT_SNSPISTOL2", "AMT Backup", "WTSNSPISTOL2" },
+	{ "WT_HVYPISTOL", "Entreprise Wide Body 1911", "WTHVYPISTOL" },
+	{ "WT_VPISTOL", "FN Model 1922", "WTVPISTOL" },
+	{ "WT_MKPISTOL", "Thompson/Center Contender G2", "WTMKPISTOL" },
+	{ "WT_REVOLVER", "ASG Dan Wesson", "WTREVOLVER" },
+	{ "WT_REVOLVER2", "Chiappa Rhino", "WTREVOLVER2" },
+	{ "WT_REV_DA", "Colt M1892", "WTREVDA" },
+	{ "WT_PIST_AP", "Colt SCAMP", "WTPISTAP" },
+	{ "WT_SMG_MCR", "Mini Uzi", "WTSMGMCR" },
+	{ "WT_MCHPIST", "TEC-9", "WTMCHPIST" },
+	{ "WT_MINISMG", "Skorpion Vz. 61", "WTMINISMG" },
+	{ "WT_SMG", "MP5A3", "WTSMG2" },
+	{ "WT_SMG2", "SIG Sauer MPX", "WTSMG2" },
+	{ "WT_SMG_ASL", "FN P90", "WTSMGASL" },
+	{ "WT_BULLRIFLE", "QBZ-95", "WTBULLRIFLE" },
+	{ "WT_BULLRIFLE2", "VHS-2", "WTBULLRIFLE2" },
+	{ "WT_CMPRIFLE", "AKS-74U", "WTCMPRIFLE" }
 }
 
-menu.my_root():divider("Apply Real Car Names")
+menu.my_root():divider("Real Car Names / Real Weapon Names")
 
 menu.my_root():action("Activate RCN <3", { "rcn" }, "Replaces Car Names With Real Life Counterpart ^-_-^", function()
 	for _, data in ipairs(cars) do
@@ -996,27 +987,15 @@ menu.my_root():action("Activate RCN <3", { "rcn" }, "Replaces Car Names With Rea
 	util.toast("Done <3")
 end)
 
-menu.my_root():divider("Apply Real Weapon Names")
-
 menu.my_root():action("Activate RWN <3", { "rwn" }, "Replaces Weapon Names With Real Life Counterpart ^-_-^", function()
 	for _, data in ipairs(weapons) do
-		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
+		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[3] .. " " .. data[2])
 		util.yield()
 	end
 	util.toast("Done <3")
 end)
 
-menu.my_root():divider("Apply Default Names")
-
-menu.my_root():action("Activate DN <3", { "rndefault" }, "It doesn't work right now!", function()
-	for _, data in ipairs(def) do
-		menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
-		util.yield()
-	end
-	util.toast("3< enoD")
-end)
-
-menu.my_root():divider("Version: v3.7.1")
+menu.my_root():divider("Version: v3.7.2")
 
 menu.my_root():action("Check for Update <3", { "rcnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
