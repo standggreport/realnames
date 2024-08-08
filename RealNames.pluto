@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.8.0"
+local SCRIPT_VERSION = "3.8.1"
 -- Thanks xm4ddy
 
 ---
@@ -953,17 +953,17 @@ local cars = {
 
 local weapons = {
 
-	{ "WT_SG_ASL", "UTAS UTS-15", "WTSGASL" },
-	{ "WT_SG_PMP", "Mossberg 590", "WTSGPMP" },
-	{ "WT_SG_PMP2", "Remington 870", "WTSGPMP2" },
-	{ "WT_SG_SOF", "Mossberg 500 (Shortened)", "WTSGSOF" },
-	{ "WT_SG_BLP", "Kel-Tec KSG", "WTSGBLP" },
-	{ "WT_CMBSHGN", "Franchi SPAS-12", "WTCMBSHGN" },
-	{ "WT_MUSKET", "Brown Bess", "WTMUSKET" },
-	{ "WT_HVYSHGN", "Saiga 12K", "WTHVYSHGN" },
-	{ "WT_DBSHGN", "Zabala Sawed-Off Shotgun", "WTDBSHGN" },
-	{ "WT_AUTOSHGN", "Atchisson AA-12", "WTAUTOSHGN" },
-	{ "WT_GL", "M32 Milkor MGL", "WTGL" },
+	{ "WT_SG_ASL", "UTAS UTS-15" },
+	{ "WT_SG_PMP", "Mossberg 590" },
+	{ "WT_SG_PMP2", "Remington 870" },
+	{ "WT_SG_SOF", "Mossberg 500 (Shortened)" },
+	{ "WT_SG_BLP", "Kel-Tec KSG" },
+	{ "WT_CMBSHGN", "Franchi SPAS-12" },
+	{ "WT_MUSKET", "Brown Bess" },
+	{ "WT_HVYSHGN", "Saiga 12K" },
+	{ "WT_DBSHGN", "Zabala Sawed-Off Shotgun" },
+	{ "WT_AUTOSHGN", "Atchisson AA-12" },
+	{ "WT_GL", "M32 Milkor MGL" },
 	{ "WT_RPG", "RPG-7", "WTRPG" },
 	{ "WT_MINIGUN", "M134 Minigun", "WTMINIGUN" },
 	{ "WT_RAILGUN", "ARC-920", "WTRAILGUN" },
@@ -1023,7 +1023,7 @@ root_menu:action("Activate RCN <3", { "rcn" }, "Replaces Car Names With Real Lif
         menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
         util.yield()
     end
-    util.toast("Done <3")
+    util.toast("Done <3\nYou can play now!")
 end)
 
 root_menu:action("Activate RWN <3", { "rwn" }, "Replaces Weapon Names With Real Life Counterpart ^-_-^", function()
@@ -1031,28 +1031,53 @@ root_menu:action("Activate RWN <3", { "rwn" }, "Replaces Weapon Names With Real 
         menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
         util.yield()
     end
-    util.toast("Done <3")
+    util.toast("Done <3\nYou can play now!")
 end)
 
 root_menu:divider("Replaces Real Names with Default")
-root_menu:action("Activate DCN <3", { "rcndefault" }, "Replaces Real Car Names with Default ^-_-^", function()
-	for _, data in ipairs(cars) do
-		menu.trigger_commands("remove" .. data[1])
-		util.yield(1)
-	end
-	util.toast("3< enoD")
-end)
-root_menu:action("Activate DWN <3", { "rwndefault" }, "Replaces Real Weapon Names with Default ^-_-^", function()
-	for _, data in ipairs(weapons) do
-		menu.trigger_commands("remove" .. data[1])
-		util.yield(1)
-	end
-	util.toast("3< enoD")
+local function activate_dcn()
+    for _, data in ipairs(cars) do
+        menu.trigger_commands("remove" .. data[1])
+        util.yield()
+    end
+    util.toast("3< enoD\nYou can play now!")
+end
+
+local function activate_dwn()
+    for _, data in ipairs(weapons) do
+        menu.trigger_commands("remove" .. data[1])
+        util.yield()
+    end
+    util.toast("3< enoD\nYou can play now!")
+end
+
+local def_menu = menu.list(menu.my_root(), "Activate DCN / DWN <3", { "rndef" }, "Replaces Real Names with Default ^-_-^")
+
+menu.action(def_menu, "Activate DCN <3", { "dcn" }, "Replaces Real Car Names with Default ^-_-^", function()
+    menu.show_warning(def_menu, 1, "Would you like to activate DCN now?",
+        function()
+            activate_dcn()
+        end,
+        function()
+        end,
+        false
+    )
 end)
 
-root_menu:divider("Version: v3.8.0")
+menu.action(def_menu, "Activate DWN <3", { "dwn" }, "Replaces Real Weapon Names with Default ^-_-^", function()
+    menu.show_warning(def_menu, 1, "Would you like to activate DWN now?",
+        function()
+            activate_dcn()
+        end,
+        function()
+        end,
+        false
+    )
+end)
 
-root_menu:action("Check for Update <3", { "rcnupdate" }, "You can manually check using this option anytime.", function()
+root_menu:divider("Version: v3.8.1")
+
+root_menu:action("Check for Update <3", { "rnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
     util.toast("Checking for updates")
     auto_updater.run_auto_update(auto_update_config)
