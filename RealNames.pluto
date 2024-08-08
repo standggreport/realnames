@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.8.1"
+local SCRIPT_VERSION = "3.8.2"
 -- Thanks xm4ddy
 
 ---
@@ -964,54 +964,54 @@ local weapons = {
 	{ "WT_DBSHGN", "Zabala Sawed-Off Shotgun" },
 	{ "WT_AUTOSHGN", "Atchisson AA-12" },
 	{ "WT_GL", "M32 Milkor MGL" },
-	{ "WT_RPG", "RPG-7", "WTRPG" },
-	{ "WT_MINIGUN", "M134 Minigun", "WTMINIGUN" },
-	{ "WT_RAILGUN", "ARC-920", "WTRAILGUN" },
-	{ "WT_HOMLNCH", "FIM-92 Stinger", "WTHOMLNCH" },
-	{ "WT_CMPGL", "M79 Sawed-Off", "WTCMPGL" },
-	{ "WT_GNADE", "M61 Grenade", "WTGNADE" },
-	{ "WT_GNADE_STK", "C-4", "WTGNADESTK" },
-	{ "WT_PETROL", "Kraftstoff 20L", "WTPETROL" },
-	{ "WT_SNIP_RIF", "AI Arctic Warfare", "WTSNIPRIF" },
-	{ "WT_SNIP_HVY", "Barrett M82A1", "WTSNIPHVY" },
-	{ "WT_SNIP_HVY2", "Serbu BFG-50A", "WTSNIPHVY2" },
-	{ "WT_MKRIFLE", "M39 EMR", "WTMKRIFLE" },
-	{ "WT_MKRIFLE2", "Springfield M1A Loaded", "WTMKRIFLE2" },
-	{ "WT_UNARMED", "Fists", "WTUNARMED" },
-	{ "WT_COMBATPDW", "SIG MPX", "WTCOMBATPDW" },
-	{ "WT_MG", "PKM", "WTMG" },
-	{ "WT_MG_CBT", "M249", "WTMGCBT" },
-	{ "WT_MG_CBT2", "M60E4", "WTMGCBT2" },
-	{ "WT_GUSNBRG", "M1928A1 Thompson", "WTGUSNBRG" },
-	{ "WT_RIFLE_ASL", "Type 56-2", "WTRIFLEASL" },
-	{ "WT_RIFLE_ASL2", "AK-12", "WTRIFLEASL2" },
-	{ "WT_RIFLE_CBN", "H&K 416", "WTRIFLECBN" },
-	{ "WT_RIFLE_CBN2", "Remington R5 RGP", "WTRIFLECBN2" },
-	{ "WT_RIFLE_ADV", "Tavor TAR-21", "WTRIFLEADV" },
-	{ "WT_SPCARBINE", "H&K G36C", "WTSPCARBINE" },
-	{ "WT_SPCARBINE2", "H&K G36K", "WTSPCARBINE2" },
-	{ "WT_PIST", "Taurus PT92AF", "WTPIST" },
-	{ "WT_PIST2", "Beretta M9A3", "WTPIST2" },
-	{ "WT_PIST_CBT", "H&K P2000", "WTPISTCBT" },
-	{ "WT_PIST_50", "FN Five-seven", "WTPIST50" },
-	{ "WT_SNSPISTOL", "Heckler & Koch P7M10", "WTSNSPISTOL" },
-	{ "WT_SNSPISTOL2", "AMT Backup", "WTSNSPISTOL2" },
-	{ "WT_HVYPISTOL", "Entreprise Wide Body 1911", "WTHVYPISTOL" },
-	{ "WT_VPISTOL", "FN Model 1922", "WTVPISTOL" },
-	{ "WT_MKPISTOL", "Thompson/Center Contender G2", "WTMKPISTOL" },
-	{ "WT_REVOLVER", "ASG Dan Wesson", "WTREVOLVER" },
-	{ "WT_REVOLVER2", "Chiappa Rhino", "WTREVOLVER2" },
-	{ "WT_REV_DA", "Colt M1892", "WTREVDA" },
-	{ "WT_PIST_AP", "Colt SCAMP", "WTPISTAP" },
-	{ "WT_SMG_MCR", "Mini Uzi", "WTSMGMCR" },
-	{ "WT_MCHPIST", "TEC-9", "WTMCHPIST" },
-	{ "WT_MINISMG", "Skorpion Vz. 61", "WTMINISMG" },
-	{ "WT_SMG", "MP5A3", "WTSMG2" },
-	{ "WT_SMG2", "SIG Sauer MPX", "WTSMG2" },
-	{ "WT_SMG_ASL", "FN P90", "WTSMGASL" },
-	{ "WT_BULLRIFLE", "QBZ-95", "WTBULLRIFLE" },
-	{ "WT_BULLRIFLE2", "VHS-2", "WTBULLRIFLE2" },
-	{ "WT_CMPRIFLE", "AKS-74U", "WTCMPRIFLE" }
+	{ "WT_RPG", "RPG-7" },
+	{ "WT_MINIGUN", "M134 Minigun" },
+	{ "WT_RAILGUN", "ARC-920" },
+	{ "WT_HOMLNCH", "FIM-92 Stinger" },
+	{ "WT_CMPGL", "M79 Sawed-Off" },
+	{ "WT_GNADE", "M61 Grenade" },
+	{ "WT_GNADE_STK", "C-4" },
+	{ "WT_PETROL", "Kraftstoff 20L" },
+	{ "WT_SNIP_RIF", "AI Arctic Warfare" },
+	{ "WT_SNIP_HVY", "Barrett M82A1" },
+	{ "WT_SNIP_HVY2", "Serbu BFG-50A" },
+	{ "WT_MKRIFLE", "M39 EMR" },
+	{ "WT_MKRIFLE2", "Springfield M1A Loaded" },
+	{ "WT_UNARMED", "Fists" },
+	{ "WT_COMBATPDW", "SIG MPX" },
+	{ "WT_MG", "PKM" },
+	{ "WT_MG_CBT", "M249" },
+	{ "WT_MG_CBT2", "M60E4" },
+	{ "WT_GUSNBRG", "M1928A1 Thompson" },
+	{ "WT_RIFLE_ASL", "Type 56-2" },
+	{ "WT_RIFLE_ASL2", "AK-12" },
+	{ "WT_RIFLE_CBN", "H&K 416" },
+	{ "WT_RIFLE_CBN2", "Remington R5 RGP" },
+	{ "WT_RIFLE_ADV", "Tavor TAR-21" },
+	{ "WT_SPCARBINE", "H&K G36C" },
+	{ "WT_SPCARBINE2", "H&K G36K" },
+	{ "WT_PIST", "Taurus PT92AF" },
+	{ "WT_PIST2", "Beretta M9A3" },
+	{ "WT_PIST_CBT", "H&K P2000" },
+	{ "WT_PIST_50", "FN Five-seven" },
+	{ "WT_SNSPISTOL", "Heckler & Koch P7M10" },
+	{ "WT_SNSPISTOL2", "AMT Backup" },
+	{ "WT_HVYPISTOL", "Entreprise Wide Body 1911" },
+	{ "WT_VPISTOL", "FN Model 1922" },
+	{ "WT_MKPISTOL", "Thompson/Center Contender G2" },
+	{ "WT_REVOLVER", "ASG Dan Wesson" },
+	{ "WT_REVOLVER2", "Chiappa Rhino" },
+	{ "WT_REV_DA", "Colt M1892" },
+	{ "WT_PIST_AP", "Colt SCAMP" },
+	{ "WT_SMG_MCR", "Mini Uzi" },
+	{ "WT_MCHPIST", "TEC-9" },
+	{ "WT_MINISMG", "Skorpion Vz. 61" },
+	{ "WT_SMG", "MP5A3" },
+	{ "WT_SMG2", "SIG Sauer MPX" },
+	{ "WT_SMG_ASL", "FN P90" },
+	{ "WT_BULLRIFLE", "QBZ-95" },
+	{ "WT_BULLRIFLE2", "VHS-2" },
+	{ "WT_CMPRIFLE", "AKS-74U" }
 }
 
 local root_menu = menu.my_root()
@@ -1037,6 +1037,7 @@ end)
 root_menu:divider("Replaces Real Names with Default")
 local function activate_dcn()
     for _, data in ipairs(cars) do
+		util.toast("Wait for it to complete!")
         menu.trigger_commands("remove" .. data[1])
         util.yield()
     end
@@ -1045,6 +1046,7 @@ end
 
 local function activate_dwn()
     for _, data in ipairs(weapons) do
+		util.toast("Wait for it to complete!")
         menu.trigger_commands("remove" .. data[1])
         util.yield()
     end
@@ -1053,29 +1055,31 @@ end
 
 local def_menu = menu.list(menu.my_root(), "Activate DCN / DWN <3", { "rndef" }, "Replaces Real Names with Default ^-_-^")
 
-menu.action(def_menu, "Activate DCN <3", { "dcn" }, "Replaces Real Car Names with Default ^-_-^", function()
+def_menu:action( "Activate DCN <3", { "dcn" }, "Replaces Real Car Names with Default ^-_-^", function()
     menu.show_warning(def_menu, 1, "Would you like to activate DCN now?",
         function()
             activate_dcn()
         end,
         function()
+		util.toast("Successfully cancelled! <3")
         end,
         false
     )
 end)
 
-menu.action(def_menu, "Activate DWN <3", { "dwn" }, "Replaces Real Weapon Names with Default ^-_-^", function()
+def_menu:action("Activate DWN <3", { "dwn" }, "Replaces Real Weapon Names with Default ^-_-^", function()
     menu.show_warning(def_menu, 1, "Would you like to activate DWN now?",
         function()
-            activate_dcn()
+            activate_dwn()
         end,
         function()
+		util.toast("Successfully cancelled! <3")
         end,
         false
     )
 end)
 
-root_menu:divider("Version: v3.8.1")
+root_menu:divider("Version: v3.8.2")
 
 root_menu:action("Check for Update <3", { "rnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
