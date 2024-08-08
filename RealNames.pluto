@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.7.9.2"	
+local SCRIPT_VERSION = "3.8.0"
 -- Thanks xm4ddy
 
 ---
@@ -86,7 +86,6 @@ local cars = {
 
 	-- Benefactor / Mercedes-Benz
 	{ "BENEFAC", "" },
-	{ "BIFF", "Mercedes-Benz Dump Truck" },
 	{ "BRUISER", "Mercedes-Benz W114/W115 (Apocalypse)" },
 	{ "BRUISER2", "Mercedes-Benz W114/W115 (Future Shock)" },
 	{ "BRUISER3", "Mercedes-Benz W114/W115 (Nightmare)" },
@@ -121,7 +120,6 @@ local cars = {
 
 	-- BF / Volkswagen
 	{ "BF", "" },
-	{ "BF400", "KTM 450 Rally" },
 	{ "BFINJECT", "Baja Bug" },
 	{ "BIFTA", "Meyers Manx" },
 	{ "CLUB", "Volkswagen Golf Mk1 (Type 17)" },
@@ -266,7 +264,6 @@ local cars = {
 	{ "STALION2", "Oldsmobile Cutlass (Burger Shot)" },
 	{ "BURRITO", "Chevrolet Express Van '96" },
 	{ "BURRITO2", "Chevrolet Express Van (Bugstars)" },
-	{ "POLICET3", "Chevrolet Express Van '96" },
 	{ "GBURRITO", "Chevrolet Express Van (Gang)" },
 	{ "GBURRITO2", "Chevrolet Express Van (Gang)" },
 	{ "OPENWHEEL2", "Dallara DW12" },
@@ -614,9 +611,7 @@ local cars = {
 	{ "BLAZER5", "Gibbs Quadski" },
 	{ "BUZZARD", "AH-6 Little Bird" },
 	{ "BUZZARD2", "MH-6 Little Bird" },
-	{ "CADDY", "E-Z-Go TXT" },
 	{ "CADDY", "Golf Cart" },
-	{ "CADDY3", "Golf Cart" },
 	{ "CARBON", "Ducati 1199" },
 	{ "CHIMERA", "Chimera" },
 	{ "DINGHY", "Zodiac Hurricane CZ7" },
@@ -821,7 +816,6 @@ local cars = {
 	{ "GB200", "Ford RS200" },
 	{ "GUARDIAN", "Ford F-650 Truck" },
 	{ "HOTKNIFE", "Ford Model A '20" },
-	{ "HUNTLEY", "Range Rover Sport '06" },
 	{ "HUSTLER", "Ford Coupe '33" },
 	{ "IMPERATOR", "Ford Falcon XB GT '73 (Apocalypse)" },
 	{ "IMPERATOR2", "Ford Falcon XB GT '73 (Future Shock)" },
@@ -832,7 +826,6 @@ local cars = {
 	{ "PEYOTE", "Ford Thunderbird '55" },
 	{ "PEYOTE2", "Ford Thunderbird \"Bird of Prey\" Gasser '55" },
 	{ "PEYOTE3", "Ford Thunderbird '55" },
-	{ "PICADOR", "Chevrolet El Camino '68" },
 	{ "POLDOM10", "Ford Mustang '79 (Police)" },
 	{ "POLICE", "Ford Taurus Facelift Police Interceptor '13" },
 	{ "POLICE4", "Ford Crown Victoria Unmarked '92" },
@@ -855,8 +848,6 @@ local cars = {
 	{ "SPEEDO", "Chevrolet Express '03" },
 	{ "SPEEDO2", "Chevrolet Express (Clown)" },
 	{ "SPEEDO4", "Chevrolet Express (Custom)" },
-	{ "SURGE", "Holden Volt '10" },
-	{ "TAIPAN", "Hennessey Venom F5" },
 	{ "TROPHY", "Ford F-150 Baja" },
 	{ "TROPHY2", "Red Bull SMG Buggy" },
 	{ "WINKY", "Ford GPW" },
@@ -932,15 +923,11 @@ local cars = {
 
 	-- Other
 	{ "AVARUS", "Harley-Davidson Dyna" },
-	{ "BAGGER", "Harley-Davidson Road King" },
-	{ "BARRAGE", "Polaris MRZR" },
 	{ "BOMBUSHKA", "Antonov An-12" },
-	{ "BRAWLER", "Local Motors Rally Fighter" },
 	{ "BTYPE", "Bentley Blower" },
 	{ "CABLECAR", "San Francisco Cable Car" },
 	{ "CARGOPL", "Antonov An-124 Ruslan" },
 	{ "DLOADER", "Ford Model A Pickup" },
-	{ "DOCKTUG", "Yard Tug" },
 	{ "HUNTER", "Boeing AH-64 Apache" },
 	{ "JET", "Boeing 747-400" },
 	{ "KHANJALI", "Polish PL-01" },
@@ -1041,13 +1028,29 @@ end)
 
 root_menu:action("Activate RWN <3", { "rwn" }, "Replaces Weapon Names With Real Life Counterpart ^-_-^", function()
     for _, data in ipairs(weapons) do
-        menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[3] .. " " .. data[2])
+        menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
         util.yield()
     end
     util.toast("Done <3")
 end)
 
-root_menu:divider("Version: v3.7.9.2")
+root_menu:divider("Replaces Real Names with Default")
+root_menu:action("Activate DCN <3", { "rcndefault" }, "Replaces Real Car Names with Default ^-_-^", function()
+	for _, data in ipairs(cars) do
+		menu.trigger_commands("remove" .. data[1])
+		util.yield(1)
+	end
+	util.toast("3< enoD")
+end)
+root_menu:action("Activate DWN <3", { "rwndefault" }, "Replaces Real Weapon Names with Default ^-_-^", function()
+	for _, data in ipairs(weapons) do
+		menu.trigger_commands("remove" .. data[1])
+		util.yield(1)
+	end
+	util.toast("3< enoD")
+end)
+
+root_menu:divider("Version: v3.8.0")
 
 root_menu:action("Check for Update <3", { "rcnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
