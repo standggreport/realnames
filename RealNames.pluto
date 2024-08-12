@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.8.2"
+local SCRIPT_VERSION = "3.8.2.1"
 -- Original script by harleenquinzzel
 -- Thanks xm4ddy
 
@@ -1019,7 +1019,7 @@ local root_menu = menu.my_root()
 
 root_menu:divider("Replaces Names With Real Life Names")
 
-root_menu:action("Activate RCN <3", { "rcn" }, "Replaces Car Names With Real Life Counterpart ^-_-^", function()
+root_menu:action("Activate RCN <3", { "rcn" }, "Replaces Vehicle Names With Real Life Counterpart ^-_-^", function()
     for _, data in ipairs(cars) do
         menu.trigger_commands("addlabel " .. data[1] .. ";edit" .. data[1] .. " " .. data[2])
         util.yield()
@@ -1056,7 +1056,7 @@ end
 
 local def_menu = menu.list(menu.my_root(), "Activate DCN / DWN <3", { "rndef" }, "Replaces Real Names with Default ^-_-^")
 
-def_menu:action( "Activate DCN <3", { "dcn" }, "Replaces Real Car Names with Default ^-_-^", function()
+def_menu:action( "Activate DCN <3", { "dcn" }, "Replaces Real Vehicle Names with Default ^-_-^", function()
     menu.show_warning(def_menu, 1, "Would you like to activate DCN now?",
         function()
             activate_dcn()
@@ -1080,7 +1080,7 @@ def_menu:action("Activate DWN <3", { "dwn" }, "Replaces Real Weapon Names with D
     )
 end)
 
-root_menu:divider("Version: v3.8.2")
+root_menu:divider("Version: v3.8.2.1")
 
 root_menu:action("Check for Update <3", { "rnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
