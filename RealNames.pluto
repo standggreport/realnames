@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.8.3"
+local SCRIPT_VERSION = "3.8.3.1"
 -- Original script by harleenquinzzel						 
 -- Thanks xm4ddy
 
@@ -1057,33 +1057,31 @@ local function activate_dwn()
     util.toast("3< enoD\nYou can play now!")
 end
 
-local def_menu = menu.list(menu.my_root(), "Activate DCN / DWN <3", { "rndef" }, "Replaces Real Names with Default ^-_-^")
+local def_menu = menu.my_root():list("Activate DCN / DWN <3", { "rndef" }, "Replaces Real Names with Default ^-_-^")
 
 def_menu:action( "Activate DCN <3", { "dcn" }, "Replaces Real Vehicle Names with Default ^-_-^", function()
-    menu.show_warning(def_menu, 1, "Would you like to activate DCN now?",
+    menu.show_warning(def_menu, "Would you like to activate DCN now?",
         function()
             activate_dcn()
         end,
         function()
-		util.toast("Successfully cancelled! <3")
+            util.toast("Successfully cancelled! <3")
         end,
-        false
     )
 end)
 
 def_menu:action("Activate DWN <3", { "dwn" }, "Replaces Real Weapon Names with Default ^-_-^", function()
-    menu.show_warning(def_menu, 1, "Would you like to activate DWN now?",
+    menu.show_warning(def_menu, "Would you like to activate DWN now?",
         function()
             activate_dwn()
         end,
         function()
-		util.toast("Successfully cancelled! <3")
+            util.toast("Successfully cancelled! <3")
         end,
-        false
     )
 end)
 
-root_menu:divider("Version: v3.8.3")
+root_menu:divider("Version: v3.8.3.1")
 
 root_menu:action("Check for Update <3", { "rnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
