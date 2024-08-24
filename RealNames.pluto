@@ -1,4 +1,4 @@
-local SCRIPT_VERSION = "3.8.4.1"
+local SCRIPT_VERSION = "3.8.4.2"
 -- Original script by harleenquinzzel						 
 -- Thanks xm4ddy
 
@@ -363,12 +363,13 @@ local cars = {
 	{ "VINDICATOR", "Honda NM4" },
 	
 	-- DUDE / MAN
+	{ "DUNDREAR", "" },
 	{ "DUNDREARY", "" },
 	{ "LANDSTALKER", "Lincoln Navigator L '07" },
 	{ "LANDSTLKR2", "Lincoln Navigator L '18" },
 	{ "REGINA", "Plymouth Fury Sport Suburban '73" },
-	{ "VIRGO2", "Mercury Cougar '77" },
-	{ "VIRGO3", "Mercury Cougar '77 (Custom)" },
+	{ "VIRGO2", "Lincoln Continental Mark V '77" },
+	{ "VIRGO3", "Lincoln Continental Mark V '77 (Custom)" },
 	
 	-- Emperor / Lexus
 	{ "EMPEROR", "" },
@@ -1088,7 +1089,7 @@ def_menu:action("Activate DWN <3", { "dwn" }, "Replaces Real Weapon Names with D
     end)
 end)
 
-root_menu:divider("Version: v3.8.4.1")
+root_menu:divider("Version: v3.8.4.2")
 
 root_menu:action("Check for Update <3", { "rnupdate" }, "You can manually check using this option anytime.", function()
     auto_update_config.check_interval = 0
